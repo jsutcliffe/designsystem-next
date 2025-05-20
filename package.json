@@ -1,0 +1,30 @@
+{
+  "name": "@scottish-government/designsystem-react",
+  "description": "A React/JSX implementation of the Scottish Government Design System",
+  "version": "0.1.0",
+  "author": {
+    "name": "Scottish Government Digital Design System team",
+    "email": "designsystem@gov.scot",
+    "url": "https://designsystem.gov.scot"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.2.3",
+    "prismjs": "^1.29.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@scottish-government/design-system": "^3.0.0",
+    "designsystem-react": "file:../designsystem-react",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.5",
+    "react-element-to-jsx-string": "^17.0.0"
+  }
+}
