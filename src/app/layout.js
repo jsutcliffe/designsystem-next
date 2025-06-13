@@ -3,7 +3,7 @@ import "@scottish-government/design-system/dist/css/design-system.css";
 import "./app.css";
 import "./highlight.css";
 
-import SkipLinks from 'designsystem-react/dist/components/skip-links/skip-links';
+import SkipLinks from 'designsystem-react/src/components/skip-links/skip-links';
 
 
 export const metadata = {

@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@scottish-government/design-system": "^3.0.0",
-    "designsystem-react": "file:../designsystem-react",
+    "designsystem-react": "https://github.com/scottish-government-design-system/designsystem-react",
     "eslint": "^8",
     "eslint-config-next": "^14.2.5",
     "react-element-to-jsx-string": "^17.0.0"

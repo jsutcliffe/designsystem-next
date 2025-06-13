@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-import Details from 'designsystem-react/dist/components/details/details';
+import Details from 'designsystem-react/src/components/details/details';
 
 
 import Prism from 'prismjs';
