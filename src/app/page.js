@@ -68,12 +68,10 @@ import Icon from 'designsystem-react/src/common/icon';
 // sort options
 // step navigation (enhanced accordion)
 import TaskList, { Task, TaskGroup } from 'designsystem-react/src/components/task-list/task-list';
-//// task list group DONE as part of task list
-//// currency: DONE as part of text input
 // field group
 // label (do we need a JSX label?)
 // prefilled value list (part of summary list)
-//// reveal content: deprecated
+
 
 // BASE STYLES
 
@@ -110,119 +108,119 @@ export default function Home() {
             <ContentsNav label="Sections in this page" items={[
                 {
                     href: '#section-accordion',
-                    content: 'Accordion'
+                    title: 'Accordion'
                 },
                 {
                     href: '#section-aspect-box',
-                    content: 'Aspect box'
+                    title: 'Aspect box'
                 },
                 {
                     href: '#section-back-to-top',
-                    content: 'Back to top'
+                    title: 'Back to top'
                 },
                 {
                     href: '#section-breadcrumbs',
-                    content: 'Breadcrumbs'
+                    title: 'Breadcrumbs'
                 },
                 {
                     href: '#section-button',
-                    content: 'Button'
+                    title: 'Button'
                 },
                 {
                     href: '#section-checkbox',
-                    content: 'Checkbox'
+                    title: 'Checkbox'
                 },
                 {
                     href: '#section-confirmation-message',
-                    content: 'Confirmation message'
+                    title: 'Confirmation message'
                 },
                 {
                     href: '#section-contents-nav',
-                    content: 'Contents nav'
+                    title: 'Contents nav'
                 },
                 {
                     href: '#section-date-picker',
-                    content: 'Date picker'
+                    title: 'Date picker'
                 },
                 {
                     href: '#section-details',
-                    content: 'Details'
+                    title: 'Details'
                 },
                 {
                     href: '#section-inset-text',
-                    content: 'Inset text'
+                    title: 'Inset text'
                 },
                 {
                     href: '#section-notification-banner',
-                    content: 'Notification banner'
+                    title: 'Notification banner'
                 },
                 {
                     href: '#section-notification-panel',
-                    content: 'Notification panel'
+                    title: 'Notification panel'
                 },
                 {
                     href: '#section-page-header',
-                    content: 'Page header'
+                    title: 'Page header'
                 },
                 {
                     href: '#section-page-metadata',
-                    content: 'Page metadata'
+                    title: 'Page metadata'
                 },
                 {
                     href: '#section-phase-banner',
-                    content: 'Phase banner'
+                    title: 'Phase banner'
                 },
                 {
                     href: '#section-question',
-                    content: 'Question'
+                    title: 'Question'
                 },
                 {
                     href: '#section-radio',
-                    content: 'Radio button'
+                    title: 'Radio button'
                 },
                 {
                     href: '#section-select',
-                    content: 'Select (dropdown)'
+                    title: 'Select (dropdown)'
                 },
                 {
                     href: '#section-sequential-navigation',
-                    content: 'Sequential navigation'
+                    title: 'Sequential navigation'
                 },
                 {
                     href: '#section-side-navigation',
-                    content: 'Side navigation'
+                    title: 'Side navigation'
                 },
                 {
                     href: '#section-site-navigation',
-                    content: 'Site navigation'
+                    title: 'Site navigation'
                 },
                 {
                     href: '#section-site-search',
-                    content: 'Site search'
+                    title: 'Site search'
                 },
                 {
                     href: '#section-skip-links',
-                    content: 'Skip links'
+                    title: 'Skip links'
                 },
                 {
                     href: '#section-tag',
-                    content: 'Tag'
+                    title: 'Tag'
                 },
                 {
                     href: '#section-task-list',
-                    content: 'Task list'
+                    title: 'Task list'
                 },
                 {
                     href: '#section-text-input',
-                    content: 'Text input'
+                    title: 'Text input'
                 },
                 {
                     href: '#section-textarea',
-                    content: 'Textarea'
+                    title: 'Textarea'
                 },
                 {
                     href: '#section-tag',
-                    content: 'Tag'
+                    title: 'Tag'
                 }
             ]}/>
 
@@ -499,23 +497,23 @@ export default function Home() {
             <Example>
                 <ContentsNav label="Pages in this guide" items={[
                     {
-                        content: 'Apply for Blue Badge',
+                        title: 'Apply for Blue Badge',
                         current: true
                     },
                     {
-                        content: 'Eligibility',
+                        title: 'Eligibility',
                         href: '#2'
                     },
                     {
-                        content: 'Using your Blue Badge',
+                        title: 'Using your Blue Badge',
                         href: '#3'
                     },
                     {
-                        content: 'Report a lost, stolen or misuesd Blue Badge',
+                        title: 'Report a lost, stolen or misuesd Blue Badge',
                         href: '#4'
                     },
                     {
-                        content: 'Changing or handing back a Blue Badge',
+                        title: 'Changing or handing back a Blue Badge',
                         href: '#5'
                     }
                 ]} />
@@ -536,12 +534,12 @@ export default function Home() {
             <Configuration componentName="Contents nav items">
                 <p>Objects in the contents nav items array can use the following propserties:</p>
                 <dl>
-                    <dt><code>content</code></dt>
-                    <dd>Text of the content nav item</dd>
                     <dt><code>current</code> (optional)</dt>
                     <dd>Whether the nav item is for the current page. Boolean.</dd>
                     <dt><code>href</code> (optional)</dt>
                     <dd>URL of the contents nav item</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Text of the content nav item</dd>
                 </dl>
             </Configuration>
 
