@@ -101,7 +101,7 @@ export default function Home() {
                 title="Design System JSX components"
             >
                 <Metadata>
-                    <MetadataItem name="Last updated">23/06/2025</MetadataItem>
+                    <MetadataItem name="Last updated">13/06/2025</MetadataItem>
                 </Metadata>
             </PageHeader>
 
@@ -239,7 +239,7 @@ export default function Home() {
                     <AccordionItem id="accordion-1" title="Healthcare for veterans">
                         <p>Veterans are entitled to the same healthcare as any citizen. And there
                             are health care options and support available specifically for veterans.</p>
-                        <p>If you have a health condition that’s related to your service, you’re
+                        <p>If you have a health condition that&apos;s related to your service, you&apos;re
                             entitled to priority treatment based on clinical need.</p>
                     </AccordionItem>
                     <AccordionItem open id="accordion-2" title="Employability for veterans">
@@ -256,8 +256,10 @@ export default function Home() {
             <Configuration componentName="Accordion">
                 <p>Accordion components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>headerLevel</code></dt>
-                    <dd>Header level to use for the accordion items' titles. Default is <code>H3</code>.</dd>
+                    <dd>Header level to use for the accordion items&apos; titles. Default is <code>H3</code>.</dd>
                     <dt><code>hideOpenAll</code> (optional)</dt>
                     <dd>Do not show the "open all" button. Boolean.</dd>
                 </dl>
@@ -265,8 +267,10 @@ export default function Home() {
             <Configuration componentName="Accordion item">
                 <p>Accordion components&apos; <code>AccordionItem</code> children can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>headerLevel</code> (optional)</dt>
-                    <dd>Header level to use for the accordion item's title. It is better to let the parent set this for all of its accordion items.</dd>
+                    <dd>Header level to use for the accordion item&apos;s title. It is better to let the parent set this for all of its accordion items.</dd>
                     <dt><code>id</code></dt>
                     <dd>ID to use for the accordion item if you want to override the automatically generated default for any reason.</dd>
                     <dt><code>open</code> (optional)</dt>
@@ -289,8 +293,10 @@ export default function Home() {
             </Example>
 
             <Configuration componentName="Aspect box">
-                <p>Aspect box components can use the following prop:</p>
+                <p>Aspect box components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>ratio</code> (optional)</dt>
                     <dd>Aspect ratio to use. Supported values are:
                         <ul>
@@ -312,6 +318,8 @@ export default function Home() {
             <Configuration componentName="Back to top">
                 <p>Back to top components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>href</code> (optional)</dt>
                     <dd>Fragment identifier for the target element. Default is <code>#page-top</code>.</dd>
                 </dl>
@@ -333,6 +341,8 @@ export default function Home() {
             <Configuration componentName="Breadcrumbs">
                 <p>Breadcrumbs components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>hideLastItem</code> (optional)</dt>
                     <dd>Will set the final breadcrumb (i.e. the current page) to visually hidden if present. Boolean.</dd>
                     <dt><code>items</code></dt>
@@ -391,6 +401,8 @@ export default function Home() {
                             <li><code>secondary</code></li>
                         </ul>
                     </dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>icon</code> (optional)</dt>
                     <dd>Name of the icon to use from the icon stack.</dd>
                     <dt><code>iconLeft</code> (optional)</dt>
@@ -444,6 +456,8 @@ export default function Home() {
             <Configuration componentName="Checkbox group">
                 <p>Use a <code>CheckboxGroup</code> component to group checkboxes. Checkbox group components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>items</code></dt>
                     <dd>Array of checkbox items.</dd>
                     <dt><code>small</code> (optional)</dt>
@@ -486,7 +500,9 @@ export default function Home() {
                 <p>Confirmation message components can use the following prop:</p>
                 <dl>
                     <dt><code>ariaLive</code> (optional)</dt>
-                    <dd>Value for an <code>aria-live</code> attribute on the confirmation message, for cases where it's added to the page dynamically. Default is <code>polite</code>.</dd>
+                    <dd>Value for an <code>aria-live</code> attribute on the confirmation message, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>headerLevel</code> (optional)</dt>
                     <dd>The header level for the confirmation message&apos;s title. The default is <code>H3</code>. Changing the heading level does not alter the confirmation message&apos;s appearance.</dd>
                 </dl>
@@ -522,6 +538,8 @@ export default function Home() {
             <Configuration componentName="Contents navigation">
                 <p>Contents nav components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>items</code></dt>
                     <dd>Array of content nav items.</dd>
                     <dt><code>label</code> (optional)</dt>
@@ -575,6 +593,8 @@ export default function Home() {
             <Configuration componentName="Date picker">
                 <p>Date picker components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>disabledDates</code> (optional)</dt>
                     <dd>Space-separated list of dates to disable in the date picker. Uses the format <code>dd/mm/yyyy</code>.</dd>
                     <dt><code>error</code> (optional)</dt>
@@ -624,6 +644,8 @@ export default function Home() {
             <Configuration componentName="Details">
                 <p>Details components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>summary</code></dt>
                     <dd>Text to use for the details componen&apos;s &lsquo;summary&rsquo; element.</dd>
                 </dl>
@@ -636,6 +658,14 @@ export default function Home() {
                     You may be able to <a href="#inset">apply for free school meals</a> at the same time as you apply for the clothing grant.
                 </InsetText>
             </Example>
+
+            <Configuration componentName="Inset text">
+                <p>Inset text can have use the following prop:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                </dl>
+            </Configuration>
 
             <h2 className="dsjsx_example-title" id="section-notification-banner">Notification banner</h2>
 
@@ -654,6 +684,8 @@ export default function Home() {
             <Configuration componentName="Notification banner">
                 <p>Notification banner components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>close</code> (optional)</dt>
                     <dd>Shows the &lsquo;close&rsquo; button on the notification banner. Boolean.</dd>
                     <dt><code>icon</code> (optional)</dt>
@@ -681,7 +713,9 @@ export default function Home() {
                 <p>Notification panel components can use the following prop:</p>
                 <dl>
                     <dt><code>ariaLive</code> (optional)</dt>
-                    <dd>Value for an <code>aria-live</code> attribute on the notification panel, for cases where it's added to the page dynamically. Default is <code>polite</code>.</dd>
+                    <dd>Value for an <code>aria-live</code> attribute on the notification panel, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>headerLevel</code> (optional)</dt>
                     <dd>The header level for the notification panel&apos;s message&apos;s title. The default is H1. Changing the heading level does not alter the notification panel&apos;s appearance.</dd>
                     <dt><code>title</code></dt>
@@ -729,6 +763,8 @@ export default function Home() {
             <Configuration componentName="Page header">
                 <p>Page header components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>label</code> (optional)</dt>
                     <dd>Text to use for a label shown above the H1 element. No label is displayed if there is no <code>label</code> prop provided.</dd>
                     <dt><code>title</code></dt>
@@ -762,6 +798,8 @@ export default function Home() {
             <Configuration componentName="Page metadata">
                 <p>Page metadata components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>inline</code> (optional)</dt>
                     <dd>Makes the page metadata use the truncated &lsquo;inline&rsquo; display. Boolean.</dd>
                 </dl>
@@ -786,6 +824,8 @@ export default function Home() {
             <Configuration componentName="Phase banner">
                 <p>Phase banner components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>phaseName</code></dt>
                     <dd>The text for the phase banner&apos;s tag component.</dd>
                 </dl>
@@ -851,6 +891,8 @@ export default function Home() {
             <Configuration componentName="Question">
                 <p>Question components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>error</code> (optional)</dt>
                     <dd>Whether the question is in an error state. Boolean.</dd>
                     <dt><code>errorMessage</code> (optional)</dt>
@@ -914,6 +956,8 @@ export default function Home() {
             <Configuration componentName="Radio group">
                 <p>Use a <code>RadioGroup</code> component to group radio buttons. Radio groups can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>inline</code> (optional)</dt>
                     <dd>Whether to display the radio buttons in the group inline instead of stacked. Boolean.</dd>
                     <dt><code>items</code></dt>
@@ -925,7 +969,7 @@ export default function Home() {
                 </dl>
             </Configuration>
             <Configuration componentName="Radio group items">
-                <p>Objects in the radio group's items array can use the following propserties:</p>
+                <p>Objects in the radio group&apos;s items array can use the following propserties:</p>
                 <dl>
                     <dt><code>checked</code> (optional)</dt>
                     <dd>Whether the radio should be selected on load.</dd>
@@ -975,6 +1019,8 @@ export default function Home() {
             <Configuration componentName="Select">
                 <p>Select components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>defaultValue</code> (optional)</dt>
                     <dd>The ID of the option that you want selected on page load.</dd>
                     <dt><code>error</code> (optional)</dt>
@@ -1003,7 +1049,7 @@ export default function Home() {
             </Configuration>
 
             <Configuration componentName="Select 'option' items">
-                <p>Objects in the 'options' array can use the following properties:</p>
+                <p>Objects in the &lsquo;options&rsquo; array can use the following properties:</p>
                 <dl>
                     <dt><code>text</code></dt>
                     <dd>The text of the <code>option</code> element.</dd>
@@ -1025,16 +1071,18 @@ export default function Home() {
                 <p>Sequential navigation uses the following props:</p>
                 <dl>
                     <dt><code>ariaLabel</code> (optional)</dt>
-                    <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code>n element. Default is 'Article navigation'.</dd>
+                    <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code>n element. Default is &lsquo;Article navigation&rsquo;.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>next</code> (optional)</dt>
-                    <dd>Object containing data for the 'next' link.</dd>
+                    <dd>Object containing data for the &lsquo;next&rsquo; link.</dd>
                     <dt><code>next</code> (optional)</dt>
-                    <dd>Object containing data for the 'next' link.</dd>
+                    <dd>Object containing data for the &lsquo;next&rsquo; link.</dd>
                 </dl>
             </Configuration>
 
             <Configuration componentName="Sequential navigation 'next' and 'previous'">
-                <p>The values for 'next' and 'previous' are both object with the following properties:</p>
+                <p>The values for &lsquo;next&rsquo; and &lsquo;previous&rsquo; are both object with the following properties:</p>
                 <dl>
                     <dt><code>href</code></dt>
                     <dd>The destination URL.</dd>
@@ -1089,13 +1137,15 @@ export default function Home() {
             <Configuration componentName="Side navigation">
                 <p>Side navigation components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>items</code></dt>
                     <dd>Array of side navigation item objects.</dd>
                 </dl>
             </Configuration>
 
             <Configuration componentName="Side navigation items">
-                <p>Objects in the side navigation 'items' array can use the following properties:</p>
+                <p>Objects in the side navigation &lsquo;items&rsquo; array can use the following properties:</p>
                 <dl>
                     <dt><code>current</code> (optional)</dt>
                     <dd>Whether this is the current page. The current page uses a <code>span</code> element and is not a link. Boolean. Default is false.</dd>
@@ -1124,13 +1174,15 @@ export default function Home() {
             <Configuration componentName="Site navigation">
                 <p>Site navigation components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>items</code></dt>
                     <dd>Array of site navigation item objects.</dd>
                 </dl>
             </Configuration>
 
-            <Configuration componentName="Side navigation items">
-                <p>Objects in the site navigation 'items' array can use the following properties:</p>
+            <Configuration componentName="Site navigation items">
+                <p>Objects in the site navigation &lsquo;items&rsquo; array can use the following properties:</p>
                 <dl>
                     <dt><code>current</code> (optional)</dt>
                     <dd>Whether this is the current page. Boolean. Default is false.</dd>
@@ -1155,6 +1207,8 @@ export default function Home() {
                 <dl>
                     <dt><code>action</code> (optional)</dt>
                     <dd>The value of the search form&apos;s <code>action</code> atttribute. Default is <code>/search</code>.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>id</code></dt>
                     <dd>The value of the search input field&apos;s <code>id</code> attribute. Default is <code>site-search</code></dd>
                     <dt><code>method</code> (optional)</dt>
@@ -1181,20 +1235,20 @@ export default function Home() {
             <h2 className="dsjsx_example-title" id="section-skip-links">Skip links</h2>
 
             <Example nodisplay>
-                <SkipLinks id="baz" items={[
-                    {title: 'bar', href: 'foo'}
+                <SkipLinks mainContentId="baz" items={[
+                    {title: 'bar', targetId: 'foo'}
                 ]}/>
             </Example>
 
             <Configuration componentName="Skip links">
-                <p>Skip links always contain a link to the main content of a page. You can include additional links as <code>SkipLink</code> children. Skip links components can use the following prop:</p>
+                <p>Skip links always contain a link to the main content of a page. You can include additional links in the <code>items</code> prop. Skip links components can use the following props:</p>
                 <dl>
                     <dt><code>items</code> (optional)</dt>
-                    <dd>Array of additional skip link items if you need to add more than just 'main content'.</dd>
+                    <dd>Array of additional skip link items if you need to add more than just &lsquo;main content&rsquo;.</dd>
                     <dt><code>mainContentId</code> (optional)</dt>
                     <dd>The <code>id</code> attribute of the &lsquo;main content&rsquo; element to link to. Default is <code>main-content</code>.</dd>
                     <dt><code>mainLinkText</code> (optional)</dt>
-                    <dd>The text to use for the 'main content' link. Default is <code>Skip to main content</code>.</dd>
+                    <dd>The text to use for the &lsquo;main content&rsquo; link. Default is &lsquo;Skip to main content&rsquo;.</dd>
                 </dl>
             </Configuration>
 
@@ -1349,8 +1403,10 @@ export default function Home() {
             <Configuration componentName="Task list">
                 <p>Task list components can have either <code>Task</code> or <code>TaskGroup</code> children. Task list components can use the following prop:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>headingId</code> (optional)</dt>
-                    <dd>ID of the task list's heading element.</dd>
+                    <dd>ID of the task list&apos;s heading element.</dd>
                     <dt><code>title</code></dt>
                     <dd>The title of the task list.</dd>
                 </dl>
@@ -1359,6 +1415,8 @@ export default function Home() {
             <Configuration componentName="Task">
                 <p>Task components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>href</code> (optional)</dt>
                     <dd>The URL of the page to link to.</dd>
                     <dt><code>id</code> (optional)</dt>
@@ -1379,6 +1437,8 @@ export default function Home() {
             <Configuration componentName="Task group">
                 <p>Task groups can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>intro</code> (optional)</dt>
                     <dd>Text to put into an introduction paragraph above the group&apos;s tasks.</dd>
                     <dt><code>title</code></dt>
@@ -1533,6 +1593,8 @@ export default function Home() {
             <Configuration componentName="Textarea">
                 <p>Textarea components can use the following props:</p>
                 <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>error</code> (optional)</dt>
                     <dd>Whether the field is in an error state. Boolean.</dd>
                     <dt><code>errorMessage</code> (optional)</dt>
@@ -1575,6 +1637,14 @@ export default function Home() {
                     Call 999 if you or someone else is in immediate danger, or if the crime is in progress.
                 </WarningText>
             </Example>
+
+            <Configuration componentName="Warning text">
+                <p>Warning text can have use the following prop:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                </dl>
+            </Configuration>
 
             <BackToTop />
         </main>
