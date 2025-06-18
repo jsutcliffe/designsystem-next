@@ -1076,8 +1076,8 @@ export default function Home() {
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>next</code> (optional)</dt>
                     <dd>Object containing data for the &lsquo;next&rsquo; link.</dd>
-                    <dt><code>next</code> (optional)</dt>
-                    <dd>Object containing data for the &lsquo;next&rsquo; link.</dd>
+                    <dt><code>previous</code> (optional)</dt>
+                    <dd>Object containing data for the &lsquo;previous&rsquo; link.</dd>
                 </dl>
             </Configuration>
 
