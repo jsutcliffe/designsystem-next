@@ -2,52 +2,52 @@
 
 // "OFFICIAL" COMPONENTS
 
-import Accordion, { AccordionItem } from 'designsystem-react/src/components/accordion/accordion';
-import AspectBox from 'designsystem-react/src/components/aspect-box/aspect-box';
+import Accordion, { AccordionItem } from '@scottish-government/designsystem-react/dist/components/accordion/accordion';
+import AspectBox from '@scottish-government/designsystem-react/dist/components/aspect-box/aspect-box';
 //// import Autocomplete from './components/autocomplete/autocomplete'; // refactored to be a version of SiteSearch
-import BackToTop from 'designsystem-react/src/components/back-to-top/back-to-top';
-import Breadcrumbs from 'designsystem-react/src/components/breadcrumbs/breadcrumbs';
-import Button from 'designsystem-react/src/components/button/button';
+import BackToTop from '@scottish-government/designsystem-react/dist/components/back-to-top/back-to-top';
+import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/breadcrumbs/breadcrumbs';
+import Button from '@scottish-government/designsystem-react/dist/components/button/button';
 //// character count: DONE as part of text input. To be generalised with textarea.
-import CheckboxGroup from 'designsystem-react/src/components/checkbox/checkbox';
-import ConfirmationMessage from 'designsystem-react/src/components/confirmation-message/confirmation-message';
+import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/checkbox/checkbox';
+import ConfirmationMessage from '@scottish-government/designsystem-react/dist/components/confirmation-message/confirmation-message';
 // contact details
 // cookie banner
-import DatePicker from 'designsystem-react/src/components/date-picker/date-picker';
-import Details from 'designsystem-react/src/components/details/details';
-import ErrorMessage from 'designsystem-react/src/components/error-message/error-message';
+import DatePicker from '@scottish-government/designsystem-react/dist/components/date-picker/date-picker';
+import Details from '@scottish-government/designsystem-react/dist/components/details/details';
+import ErrorMessage from '@scottish-government/designsystem-react/dist/components/error-message/error-message';
 // error summary
 // feature header
 // file download
 // hide this page
-import InsetText from 'designsystem-react/src/components/inset-text/inset-text';
-import Metadata, { MetadataItem } from 'designsystem-react/src/components/page-metadata/page-metadata';
-import NotificationBanner from 'designsystem-react/src/components/notification-banner/notification-banner';
-import NotificationPanel from 'designsystem-react/src/components/notification-panel/notification-panel';
-import PageHeader from 'designsystem-react/src/components/page-header/page-header';
-// pagination
-import PhaseBanner from 'designsystem-react/src/components/phase-banner/phase-banner';
-import Question from 'designsystem-react/src/components/question/question';
-import RadioGroup from 'designsystem-react/src/components/radio-button/radio-button';
-import Select from 'designsystem-react/src/components/select/select';
-import SequentialNavigation from 'designsystem-react/src/components/sequential-navigation/sequential-navigation';
-import SideNavigation from 'designsystem-react/src/components/side-navigation/side-navigation';
+import InsetText from '@scottish-government/designsystem-react/dist/components/inset-text/inset-text';
+import Metadata, { MetadataItem } from '@scottish-government/designsystem-react/dist/components/page-metadata/page-metadata';
+import NotificationBanner from '@scottish-government/designsystem-react/dist/components/notification-banner/notification-banner';
+import NotificationPanel from '@scottish-government/designsystem-react/dist/components/notification-panel/notification-panel';
+import PageHeader from '@scottish-government/designsystem-react/dist/components/page-header/page-header';
+import Pagination from '@scottish-government/designsystem-react/dist/components/pagination/pagination';
+import PhaseBanner from '@scottish-government/designsystem-react/dist/components/phase-banner/phase-banner';
+import Question from '@scottish-government/designsystem-react/dist/components/question/question';
+import RadioGroup from '@scottish-government/designsystem-react/dist/components/radio-button/radio-button';
+import Select from '@scottish-government/designsystem-react/dist/components/select/select';
+import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/sequential-navigation/sequential-navigation';
+import SideNavigation from '@scottish-government/designsystem-react/dist/components/side-navigation/side-navigation';
 // site footer
 // site header - incl mobile nav menu
-import SiteNavigation from 'designsystem-react/src/components/site-navigation/site-navigation';
-import SiteSearch from 'designsystem-react/src/components/site-search/site-search';
-import SkipLinks from 'designsystem-react/src/components/skip-links/skip-links';
+import SiteNavigation from '@scottish-government/designsystem-react/dist/components/site-navigation/site-navigation';
+import SiteSearch from '@scottish-government/designsystem-react/dist/components/site-search/site-search';
+import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
 // summary list
 // table
 // tabs
-import Tag from 'designsystem-react/src/components/tag/tag';
-import Textarea from 'designsystem-react/src/components/textarea/textarea';
-import TextInput from 'designsystem-react/src/components/text-input/text-input';
-import WarningText from 'designsystem-react/src/components/warning-text/warning-text';
+import Tag from '@scottish-government/designsystem-react/dist/components/tag/tag';
+import Textarea from '@scottish-government/designsystem-react/dist/components/textarea/textarea';
+import TextInput from '@scottish-government/designsystem-react/dist/components/text-input/text-input';
+import WarningText from '@scottish-government/designsystem-react/dist/components/warning-text/warning-text';
 
 // SUPPORTING COMPONENTS
 
-import ScreenReaderText from 'designsystem-react/src/common/screen-reader-text';
+import ScreenReaderText from '@scottish-government/designsystem-react/dist/common/screen-reader-text';
 
 // UNPUBLISHED COMPONENTS
 
@@ -57,8 +57,8 @@ import ScreenReaderText from 'designsystem-react/src/common/screen-reader-text';
 // category item
 // category list
 // content label
-import ContentsNav from 'designsystem-react/src/components/contents-nav/contents-nav';
-import Icon from 'designsystem-react/src/common/icon';
+import ContentsNav from '@scottish-government/designsystem-react/dist/components/contents-nav/contents-nav';
+import Icon from '@scottish-government/designsystem-react/dist/common/icon';
 // link item (basically category item?)
 // link list (found in a page block on dynamic issue hub)
 // search controls
@@ -67,7 +67,7 @@ import Icon from 'designsystem-react/src/common/icon';
 // site branding
 // sort options
 // step navigation (enhanced accordion)
-import TaskList, { Task, TaskGroup } from 'designsystem-react/src/components/task-list/task-list';
+import TaskList, { Task, TaskGroup } from '@scottish-government/designsystem-react/dist/components/task-list/task-list';
 // field group
 // label (do we need a JSX label?)
 // prefilled value list (part of summary list)
@@ -167,6 +167,10 @@ export default function Home() {
                     title: 'Page metadata'
                 },
                 {
+                    href: '#section-pagination',
+                    title: 'Pagination'
+                },
+                {
                     href: '#section-phase-banner',
                     title: 'Phase banner'
                 },
@@ -230,6 +234,8 @@ export default function Home() {
                 {/* <ContentsLink href="#section-hint-text">Hint text</ContentsLink> */}
                 {/* <ContentsLink href="#section-icon">Icon</ContentsLink> */}
                 {/* <ContentsLink href="#section-screen-reader-text">Screen reader text</ContentsLink> */}
+
+
 
 
             <h2 className="dsjsx_example-title" id="section-accordion">Accordion</h2>
@@ -375,13 +381,13 @@ export default function Home() {
             </Example>
 
             <Example title="Buttons with icons">
-                <Button icon="chevron_right">
+                <Button icon="ChevronRight">
                     Button with icon
                 </Button><br />
-                <Button iconLeft icon="chevron_left">
+                <Button iconLeft icon="ChevronLeft">
                     Button with left icon
                 </Button><br />
-                <Button iconOnly icon="search">
+                <Button iconOnly icon="Search">
                     Search
                 </Button>
             </Example>
@@ -813,6 +819,40 @@ export default function Home() {
                 <p>The value of the metadata item is provided by its children.</p>
             </Configuration>
 
+            <h2 className="dsjsx_example-title" id="section-pagination">Pagination</h2>
+
+            <Example>
+                <Pagination page="1" totalPages="21" />
+            </Example>
+
+            <Example>
+                <Pagination page="10" totalPages="21" />
+            </Example>
+
+            <Example>
+                <Pagination page="10" padding="3" totalPages="21" />
+            </Example>
+
+            <Configuration componentName="Pagination">
+                <p>Pagination components can use the following props:</p>
+                <dl>
+                    <dt><code>ariaLabel</code> (optional)</dt>
+                    <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code> element. Default is &lsquo;Pages&rsquo;.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>onClick</code> (optional)</dt>
+                    <dd>Function to fire in response to a click event on paginaiton links.</dd>
+                    <dt><code>padding</code> (optional)</dt>
+                    <dd>Number of other pages to show on either side of the current page. Default is 1.</dd>
+                    <dt><code>page</code></dt>
+                    <dd>Current page number.</dd>
+                    <dt><code>pattern</code> (optional)</dt>
+                    <dd>A regex-ish pattern to use for the pagination links. The string <code>$1</code> will be replaced with the page number.<br />Default is <code>/search?page=$1</code>.</dd>
+                    <dt><code>totalPages</code></dt>
+                    <dd>Total number of pages.</dd>
+                </dl>
+            </Configuration>
+
             <h2 className="dsjsx_example-title" id="section-phase-banner">Phase banner</h2>
 
             <Example>
@@ -1071,7 +1111,7 @@ export default function Home() {
                 <p>Sequential navigation uses the following props:</p>
                 <dl>
                     <dt><code>ariaLabel</code> (optional)</dt>
-                    <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code>n element. Default is &lsquo;Article navigation&rsquo;.</dd>
+                    <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code> element. Default is &lsquo;Article navigation&rsquo;.</dd>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>next</code> (optional)</dt>
@@ -1466,7 +1506,7 @@ export default function Home() {
 
             <Example title="Text input with associated button">
                 <TextInput
-                    buttonIcon="search"
+                    buttonIcon="Search"
                     buttonText="Search"
                     hasButton
                     id="text-input-button"

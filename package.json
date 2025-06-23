@@ -1,5 +1,5 @@
 {
-  "name": "@scottish-government/designsystem-react",
+  "name": "@scottish-government/designsystem-next",
   "description": "A React/JSX implementation of the Scottish Government Design System",
   "version": "0.1.0",
   "author": {
@@ -21,8 +21,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@scottish-government/design-system": "^3.0.0",
-    "designsystem-react": "https://github.com/scottish-government-design-system/designsystem-react",
+    "@scottish-government/designsystem-react": "^0.1.5",
     "eslint": "^8",
     "eslint-config-next": "^14.2.5",
     "react-element-to-jsx-string": "^17.0.0"

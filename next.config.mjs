@@ -7,7 +7,7 @@ const nextConfig = {
         config.optimization.minimizer.splice(1);
         return config
     },
-    transpilePackages: ['designsystem-react']
+    transpilePackages: ['@scottish-government/designsystem-react']
 };
 
 export default nextConfig;
