@@ -80,6 +80,7 @@ import TaskList, { Task, TaskGroup } from '@scottish-government/designsystem-rea
 
 import Configuration from './components/configuration';
 import Example from './components/example';
+import lastUpdated from './lastUpdated';
 
 const suggestionMappingFunction = function (suggestionsObj) {
     const responseObj = JSON.parse(suggestionsObj.response).map(suggestionsObj => ({
@@ -101,7 +102,7 @@ export default function Home() {
                 title="Design System JSX components"
             >
                 <Metadata>
-                    <MetadataItem name="Last updated">13/06/2025</MetadataItem>
+                    <MetadataItem name="Last updated">{lastUpdated}</MetadataItem>
                 </Metadata>
             </PageHeader>
 
