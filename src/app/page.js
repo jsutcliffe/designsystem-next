@@ -19,7 +19,7 @@ import ErrorMessage from '@scottish-government/designsystem-react/dist/component
 // error summary
 // feature header
 // file download
-// hide this page
+import HideThisPage from '@scottish-government/designsystem-react/dist/components/hide-this-page/hide-this-page';
 import InsetText from '@scottish-government/designsystem-react/dist/components/inset-text/inset-text';
 import Metadata, { MetadataItem } from '@scottish-government/designsystem-react/dist/components/page-metadata/page-metadata';
 import NotificationBanner from '@scottish-government/designsystem-react/dist/components/notification-banner/notification-banner';
@@ -72,7 +72,6 @@ import TaskList, { Task, TaskGroup } from '@scottish-government/designsystem-rea
 // label (do we need a JSX label?)
 // prefilled value list (part of summary list)
 
-
 // BASE STYLES
 
 // leader
@@ -98,8 +97,9 @@ const suggestionMappingFunction = function (suggestionsObj) {
 export default function Home() {
     return (
         <main className="ds_wrapper" id="main-content">
+
             <PageHeader
-                title="Design System JSX components"
+                title="Design System React components"
             >
                 <Metadata>
                     <MetadataItem name="Last updated">{lastUpdated}</MetadataItem>
@@ -146,6 +146,10 @@ export default function Home() {
                 {
                     href: '#section-details',
                     title: 'Details'
+                },
+                {
+                    href: '#section-hide-this-page',
+                    title: 'Hide this page'
                 },
                 {
                     href: '#section-inset-text',
@@ -655,6 +659,22 @@ export default function Home() {
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>summary</code></dt>
                     <dd>Text to use for the details componen&apos;s &lsquo;summary&rsquo; element.</dd>
+                </dl>
+            </Configuration>
+
+            <h2 className="dsjsx_example-title" id="section-hide-this-page">Hide this page</h2>
+
+            <Example nodisplay>
+                <HideThisPage />
+            </Example>
+
+            <Configuration componentName="Hide this page">
+                <p>Hide this lage can have use the following props:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>escapeUrl</code> (optional)</dt>
+                    <dd>The URL to take the user to. Defaults to <code>https://www.bbc.co.uk/weather</code>.</dd>
                 </dl>
             </Configuration>
 

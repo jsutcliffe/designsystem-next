@@ -7,8 +7,8 @@ import SkipLinks from '@scottish-government/designsystem-react/dist/components/s
 
 
 export const metadata = {
-    title: "SG Design System React/JSX",
-    description: "A React/JSX implementation of the Scottish Government Design System",
+    title: "SG Design System React",
+    description: "A React implementation of the Scottish Government Design System",
 };
 
 export default function RootLayout({ children }) {
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                                             </a>
 
                                             <div className="ds_site-branding__title">
-                                                Design System JSX
+                                                Design System React
                                             </div>
                                         </div>
                                     </div>
