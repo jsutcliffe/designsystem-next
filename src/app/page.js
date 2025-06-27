@@ -37,6 +37,8 @@ import SideNavigation from '@scottish-government/designsystem-react/dist/compone
 import SiteNavigation from '@scottish-government/designsystem-react/dist/components/site-navigation/site-navigation';
 import SiteSearch from '@scottish-government/designsystem-react/dist/components/site-search/site-search';
 import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
+import SummaryCard from '@scottish-government/designsystem-react/dist/components/summary-card/summary-card';
+import SummaryList from '@scottish-government/designsystem-react/dist/components/summary-list/summary-list';
 // summary list
 // table
 // tabs
@@ -210,6 +212,14 @@ export default function Home() {
                 {
                     href: '#section-skip-links',
                     title: 'Skip links'
+                },
+                {
+                    href: '#section-summary-card',
+                    title: 'Summary card'
+                },
+                {
+                    href: '#section-summary-list',
+                    title: 'Summary list'
                 },
                 {
                     href: '#section-tag',
@@ -1320,6 +1330,112 @@ export default function Home() {
                     <dd>ID of the destination element.</dd>
                     <dt><code>title</code></dt>
                     <dd>Text to use for the link text.</dd>
+                </dl>
+            </Configuration>
+
+            <h2 className="dsjsx_example-title" id="section-summary-card">Summary card</h2>
+
+            <Example>
+                <SummaryCard
+                    title="Joe Bloggs"
+                    actions={[
+                        {
+                            title: 'Change',
+                            href: '#foo'
+                        },
+                        {
+                            title: 'Delete',
+                            onclick: () => { console.log('delete clicked') }
+                        }
+                        ]}
+                    items={[
+                        {
+                            title: 'Phone number',
+                            value: '0123 456 7890'
+                        },
+                        {
+                            title: 'Address',
+                            value: `Victoria Quay\nEdinburgh\nEH6 6QQ`,
+                        }
+                    ]}
+                />
+            </Example>
+
+            <Configuration componentName="Summary card">
+                <p>Summary card components can use the following props:</p>
+                <dl>
+                    <dt><code>actions</code> (optional)</dt>
+                    <dd>Array of summary card actions data.</dd>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>headerLevel</code> (optional)</dt>
+                    <dd>Header level to use for the summary card title. Default is <code>H3</code>.</dd>
+                    <dt><code>items</code></dt>
+                    <dd>Array of summary list item data.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>The title of the summary card.</dd>
+                </dl>
+            </Configuration>
+
+            <h2 className="dsjsx_example-title" id="section-summary-list">Summary list</h2>
+
+            <Example>
+                <SummaryList
+                    items={[
+                        {
+                            title: 'Name',
+                            value: 'Jane Smith',
+                            actions: [
+                                {
+                                    title: 'Change',
+                                    href: '#foo'
+                                },
+                                {
+                                    title: 'Delete',
+                                    onclick: () => { console.log('delete clicked') }
+                                }
+                            ]
+                        },
+                        {
+                            title: 'Date of birth',
+                            value: '13 April 2001',
+                            actions: [
+                                {
+                                    title: 'Change',
+                                    href: '#bar'
+                                }
+                            ]
+                        },
+                        {
+                            title: 'Address',
+                            value: `Scottish Government\nSt Andrew's House\nRegent Road\nEdinburgh\nEH1 3DG`,
+                            actions: [
+                                {
+                                    title: 'Change',
+                                    href: '#baz'
+                                }
+                            ]
+                        },
+                        {
+                            title: 'Contact details',
+                            value: [
+                                'email@gov.scot',
+                                '0123 456 7890',
+                            ]
+                        }
+                    ]}
+                />
+            </Example>
+
+            <Configuration componentName="Summary list">
+                <p>Summary list components can use the following props:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>items</code></dt>
+                    <dd>Array of summary list item data.</dd>
+                    <dt><code>noBorder</code> (optional)</dt>
+                    <dd>Use the borderless display variant. Boolean.</dd>
                 </dl>
             </Configuration>
 
