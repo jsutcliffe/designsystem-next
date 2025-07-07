@@ -16,6 +16,7 @@ import ConfirmationMessage from '@scottish-government/designsystem-react/dist/co
 import DatePicker from '@scottish-government/designsystem-react/dist/components/date-picker/date-picker';
 import Details from '@scottish-government/designsystem-react/dist/components/details/details';
 import ErrorMessage from '@scottish-government/designsystem-react/dist/components/error-message/error-message';
+import ErrorSummary from '@scottish-government/designsystem-react/dist/components/error-summary/error-summary';
 // error summary
 // feature header
 // file download
@@ -148,6 +149,10 @@ export default function Home() {
                 {
                     href: '#section-details',
                     title: 'Details'
+                },
+                {
+                    href: '#section-error-summary',
+                    title: 'Error summary'
                 },
                 {
                     href: '#section-hide-this-page',
@@ -672,6 +677,38 @@ export default function Home() {
                 </dl>
             </Configuration>
 
+            <h2 className="dsjsx_example-title" id="section-error-summary">Error summary</h2>
+
+            <Example>
+                <ErrorSummary errors={[
+                    {fragmentId: 'did-resolve', title: 'Did this resolve your issue?'},
+                    {fragmentId: 'what-topics', title: 'What topics are you interested in?'},
+                    {fragmentId: 'more-detail', title: 'Please provide more detail'}
+                ]} />
+            </Example>
+
+            <Configuration componentName="Error summary">
+                <p>Error summary can have use the following props:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>errors</code> (optional)</dt>
+                    <dd>Array of error objects.</dd>
+                    <dt><code>title</code> (optional)</dt>
+                    <dd>The title of the error summary. Default is &lsquo;There is a problem&rsquo;.</dd>
+                </dl>
+            </Configuration>
+
+            <Configuration componentName="Error summary error links">
+                <p>Objects in the error summary &lsquo;errors&rsquo; array can use the following properties:</p>
+                <dl>
+                    <dt><code>fragmentId</code> (optional)</dt>
+                    <dd>ID of the question or field to link to.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Text to use for the link text.</dd>
+                </dl>
+            </Configuration>
+
             <h2 className="dsjsx_example-title" id="section-hide-this-page">Hide this page</h2>
 
             <Example nodisplay>
@@ -679,7 +716,7 @@ export default function Home() {
             </Example>
 
             <Configuration componentName="Hide this page">
-                <p>Hide this lage can have use the following props:</p>
+                <p>Hide this page can have use the following props:</p>
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
