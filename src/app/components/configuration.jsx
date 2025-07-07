@@ -8,10 +8,11 @@ import Details from '@scottish-government/designsystem-react/dist/components/det
  */
 const Configuration = function ({
     componentName,
-    children
+    children,
+    ...props
 }) {
     return (
-        <Details summary={componentName + ' configuration'}>
+        <Details summary={componentName + ' configuration'} {...props}>
             {children}
         </Details>
     );

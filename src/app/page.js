@@ -908,7 +908,7 @@ export default function Home() {
                     <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code> element. Default is &lsquo;Pages&rsquo;.</dd>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>onClick</code> (optional)</dt>
+                    <dt><code>onclick</code> (optional)</dt>
                     <dd>Function to fire in response to a click event on pagination links.</dd>
                     <dt><code>padding</code> (optional)</dt>
                     <dd>Number of other pages to show on either side of the current page. Default is 1.</dd>
@@ -1361,7 +1361,7 @@ export default function Home() {
             </Configuration>
 
             <Configuration componentName="Skip link items">
-                <p>Objects in the skip link items array use the following properties:</p>
+                <p>Objects in the skip links items array use the following properties:</p>
                 <dl>
                     <dt><code>targetId</code></dt>
                     <dd>ID of the destination element.</dd>
@@ -1408,9 +1408,21 @@ export default function Home() {
                     <dt><code>headerLevel</code> (optional)</dt>
                     <dd>Header level to use for the summary card title. Default is <code>H3</code>.</dd>
                     <dt><code>items</code></dt>
-                    <dd>Array of summary list item data.</dd>
+                    <dd>Array of summary list item data. Refer to the <a href="#summary-list-items">summary list items documentation</a>.</dd>
                     <dt><code>title</code></dt>
                     <dd>The title of the summary card.</dd>
+                </dl>
+            </Configuration>
+
+            <Configuration componentName="Summary card actions">
+                <p>Objects in the summary card actions array can have the following properties:</p>
+                <dl>
+                    <dt><code>href</code> (optional)</dt>
+                    <dd>The destination URL.</dd>
+                    <dt><code>onclick</code> (optional)</dt>
+                    <dd>Function to fire in response to a click event.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Text label of the summary card action.</dd>
                 </dl>
             </Configuration>
 
@@ -1473,6 +1485,30 @@ export default function Home() {
                     <dd>Array of summary list item data.</dd>
                     <dt><code>noBorder</code> (optional)</dt>
                     <dd>Use the borderless display variant. Boolean.</dd>
+                </dl>
+            </Configuration>
+
+            <Configuration componentName="Summary list items" id="summary-list-items">
+                <p>Objects in the summary list items array can have the following properties:</p>
+                <dl>
+                    <dt><code>actions</code> (optional)</dt>
+                    <dd>Array of summary item actions data.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Title of the summary list item.</dd>
+                    <dt><code>value</code> (optional)</dt>
+                    <dd>Value of the summary item. Can be either a string or an array.</dd>
+                </dl>
+            </Configuration>
+
+            <Configuration componentName="Summary list item actions">
+                <p>Objects in the summary list item actions array can have the following properties:</p>
+                <dl>
+                    <dt><code>href</code> (optional)</dt>
+                    <dd>The destination URL.</dd>
+                    <dt><code>onclick</code> (optional)</dt>
+                    <dd>Function to fire in response to a click event.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Text label of the summary list action.</dd>
                 </dl>
             </Configuration>
 
