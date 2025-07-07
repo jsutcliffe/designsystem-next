@@ -909,7 +909,7 @@ export default function Home() {
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>onClick</code> (optional)</dt>
-                    <dd>Function to fire in response to a click event on paginaiton links.</dd>
+                    <dd>Function to fire in response to a click event on pagination links.</dd>
                     <dt><code>padding</code> (optional)</dt>
                     <dd>Number of other pages to show on either side of the current page. Default is 1.</dd>
                     <dt><code>page</code></dt>
