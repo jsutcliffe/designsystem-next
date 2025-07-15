@@ -35,6 +35,7 @@ import SequentialNavigation from '@scottish-government/designsystem-react/dist/c
 import SideNavigation from '@scottish-government/designsystem-react/dist/components/side-navigation/side-navigation';
 // site footer
 // site header - incl mobile nav menu
+import SiteHeader from '@scottish-government/designsystem-react/dist/components/site-header/site-header';
 import SiteNavigation from '@scottish-government/designsystem-react/dist/components/site-navigation/site-navigation';
 import SiteSearch from '@scottish-government/designsystem-react/dist/components/site-search/site-search';
 import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
@@ -100,7 +101,6 @@ const suggestionMappingFunction = function (suggestionsObj) {
 export default function Home() {
     return (
         <main className="ds_wrapper" id="main-content">
-
             <PageHeader
                 title="Design System React components"
             >
@@ -205,6 +205,10 @@ export default function Home() {
                 {
                     href: '#section-side-navigation',
                     title: 'Side navigation'
+                },
+                {
+                    href: '#section-site-header',
+                    title: 'Site header'
                 },
                 {
                     href: '#section-site-navigation',
@@ -650,7 +654,7 @@ export default function Home() {
                     <dt><code>value</code> (optional)</dt>
                     <dd>The default value of the date picker.</dd>
                     <dt><code>width</code> (optional)</dt>
-                    <dd>The width of the input element. See <code>TextInput</code> for the available options. Default is <code>fixed-10</code>.</dd>
+                    <dd>The width of the input element. See <a href="section-text-input">TextInput</a> for the available options. Default is <code>fixed-10</code>.</dd>
                 </dl>
 
             </Configuration>
@@ -1266,6 +1270,46 @@ export default function Home() {
                 </dl>
             </Configuration>
 
+            <h2 className="dsjsx_example-title" id="section-site-header">Site header</h2>
+
+            <Example>
+                <SiteHeader
+                    logo={{
+                        alt: 'The Scottish Government',
+                        src: './scottish-government.svg'
+                    }}
+                    navigationItems={[
+                        { title: 'About', href: '#about' },
+                        { title: 'Get started', href: '#get-started' },
+                        { title: 'Styles', href: '#styles' },
+                        { title: 'Components', href: '#components' },
+                        { title: 'Patterns', href: '#patterns' },
+                        { title: 'Guidance', href: '#guidance' },
+                    ]}
+                    phaseBanner={{
+                        phaseName: 'Beta'
+                    }}
+                    siteSearch
+                    siteTitle="Design System React"
+                    />
+            </Example>
+
+            <Configuration componentName="Site header">
+                <p>Site header components can use the following props:</p>
+                <dl>
+                    <dt><code>className</code> (optional)</dt>
+                    <dd>A CSS class name to pass to the component.</dd>
+                    <dt><code>logo</code></dt>
+                    <dt><code>navigationItems</code> (optional)</dt>
+                    <dd>Array of site navigation item objects. See <a href="#section-site-navigation">site navigation</a> for more detail.</dd>
+                    <dt><code>phaseBanner</code> (optional)</dt>
+                    <dd>Configuration for a phase banner component. See <a href="#section-phase-banner">phase banner</a> for more detail.</dd>
+                    <dt><code>siteSearch</code> (optional)</dt>
+                    <dd>Configuration for a site search component. See <a href="#section-site-search">site search</a> for more detail.</dd>
+                    <dt><code>siteTitle</code> (optional)</dt>
+                </dl>
+            </Configuration>
+
             <h2 className="dsjsx_example-title" id="section-site-navigation">Site navigation</h2>
 
             <Example>
@@ -1280,7 +1324,7 @@ export default function Home() {
             </Example>
 
             <Configuration componentName="Site navigation">
-                <p>Site navigation components can use the following prop:</p>
+                <p>Site navigation components can use the following props:</p>
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>

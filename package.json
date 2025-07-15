@@ -22,7 +22,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@scottish-government/designsystem-react": "^0.2.0",
+    "@scottish-government/designsystem-react": "^0.3.0",
     "eslint": "^8",
     "eslint-config-next": "^14.2.5",
     "react-element-to-jsx-string": "^17.0.0"

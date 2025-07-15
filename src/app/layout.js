@@ -4,7 +4,7 @@ import "./app.css";
 import "./highlight.css";
 
 import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
-
+import SiteHeader from '@scottish-government/designsystem-react/dist/components/site-header/site-header';
 
 export const metadata = {
     title: "SG Design System React",
@@ -23,21 +23,13 @@ export default function RootLayout({ children }) {
                     <span id="page-top"></span>
                     <div className="ds_page">
                         <div className="ds_page__top">
-                            <header className="ds_site-header  ds_site-header--gradient" role="banner">
-                                <div className="ds_wrapper">
-                                    <div className="ds_site-header__content">
-                                        <div className="ds_site-branding">
-                                            <a className="ds_site-branding__logo  ds_site-branding__link" href="/">
-                                                <img className="ds_site-branding__logo-image" src="./scottish-government.svg" alt="Scottish Government" />
-                                            </a>
-
-                                            <div className="ds_site-branding__title">
-                                                Design System React
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </header>
+                            <SiteHeader
+                                logo={{
+                                    alt: 'The Scottish Government',
+                                    src: './scottish-government.svg'
+                                }}
+                                siteTitle="Design System React"
+                            />
                         </div>
 
                         <div className="ds_page__middle">
