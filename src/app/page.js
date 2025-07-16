@@ -1300,6 +1300,13 @@ export default function Home() {
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>logo</code></dt>
+                    <dd>An object containing logo information. Properties are:
+                        <ul>
+                            <li><code>alt</code>: alt attribute of the logo image</li>
+                            <li><code>href</code>: link href attribute (optional, defaults to '/')</li>
+                            <li><code>src</code>: image source</li>
+                        </ul>
+                    </dd>
                     <dt><code>navigationItems</code> (optional)</dt>
                     <dd>Array of site navigation item objects. See <a href="#section-site-navigation">site navigation</a> for more detail.</dd>
                     <dt><code>phaseBanner</code> (optional)</dt>
@@ -1307,6 +1314,7 @@ export default function Home() {
                     <dt><code>siteSearch</code> (optional)</dt>
                     <dd>Configuration for a site search component. See <a href="#section-site-search">site search</a> for more detail.</dd>
                     <dt><code>siteTitle</code> (optional)</dt>
+                    <dd>Text to use in the site title.</dd>
                 </dl>
             </Configuration>
 
