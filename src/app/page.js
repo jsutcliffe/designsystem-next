@@ -38,7 +38,7 @@ import SkipLinks from '@scottish-government/designsystem-react/dist/components/s
 import SummaryCard from '@scottish-government/designsystem-react/dist/components/summary-card/summary-card';
 import SummaryList from '@scottish-government/designsystem-react/dist/components/summary-list/summary-list';
 import Table from '@scottish-government/designsystem-react/dist/components/table/table';
-// tabs
+import Tabs from '@scottish-government/designsystem-react/dist/components/tabs/tabs';
 import Tag from '@scottish-government/designsystem-react/dist/components/tag/tag';
 import Textarea from '@scottish-government/designsystem-react/dist/components/textarea/textarea';
 import TextInput from '@scottish-government/designsystem-react/dist/components/text-input/text-input';
@@ -241,6 +241,10 @@ export default function Home() {
                         title: 'Table'
                     },
                     {
+                        href: '#section-tabs',
+                        title: 'Tabs'
+                    },
+                    {
                         href: '#section-tag',
                         title: 'Tag'
                     },
@@ -264,6 +268,9 @@ export default function Home() {
                     {/* <ContentsLink href="#section-hint-text">Hint text</ContentsLink> */}
                     {/* <ContentsLink href="#section-icon">Icon</ContentsLink> */}
                     {/* <ContentsLink href="#section-screen-reader-text">Screen reader text</ContentsLink> */}
+
+
+
 
 
 
@@ -1654,6 +1661,69 @@ export default function Home() {
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>smallscreen</code> (optional)</dt>
                         <dd>The behaviour to use on small screens. Permitted values are <code>boxes</code> and <code>scrolling</code>.</dd>
+                    </dl>
+                </Configuration>
+
+                <h2 className="dsjsx_example-title" id="section-tabs">Tabs</h2>
+
+                <Example>
+                    <Tabs manual title="Contents">
+                        <Tabs.Item tabLabel="Courses and funding">
+                            <h2>Search for training courses and funding</h2>
+                            <p>A wide range of training courses for your employees are available.</p>
+                            <p>Opportunities include distance learning, short courses and vocational training.</p>
+                            <p><a href="#">Visit My World of Work to search for training courses</a>.</p>
+                            <p>You can also <a href="#">search for training courses, and funding towards training</a>.</p>
+                        </Tabs.Item>
+                        <Tabs.Item tabLabel="Choosing apprenticeships">
+                            <h2>Choosing an apprenticeship for your business</h2>
+                            <p>Apprenticeships can help you address skills gaps in your business. The government provides help with the cost of training an apprentice.</p>
+                            <p>There are 3 different types of apprenticeship:</p>
+                            <ul>
+                                <li>Foundation Apprenticeships let school or college students do short-term work experience at your business as part of a qualification</li>
+                                <li>Modern Apprenticeships let your new or current employees gain a qualification while working in a paid role at your business</li>
+                                <li>Graduate Apprenticeships let your new or current employees gain a degree while working in a paid role at your business</li>
+                            </ul>
+                            <p>You can find more information on the <a href="#">apprenticeships.scot</a> website.</p>
+                        </Tabs.Item>
+                        <Tabs.Item tabLabel="Extra skills support">
+                            <h2>Extra skills support</h2>
+                            <p>The <a href="#">Skills for Growth</a> service can offer skills advice to businesses with fewer than 250 employees.</p>
+                            <p>Businesses of any size can get skills advice by completing a <a href="#">skills support request form</a>.</p>
+                            <p>Businesses of any size can also get skills advice by calling Skills Development Scotland on 0800 783 6000.</p>
+                        </Tabs.Item>
+                    </Tabs>
+                </Example>
+
+                <Configuration componentName="Tabs">
+                    <p>Tab components can use the following props:</p>
+                    <dl>
+                        <dt><code>baseId</code></dt>
+                        <dd>A string that IDs for subcomponents are derived from.</dd>
+                        <dt><code>bordered</code> (optional)</dt>
+                        <dd>Whether to give each tab a border. Boolean. Default is <code>true</code>.</dd>
+                        <dt><code>className</code> (optional)</dt>
+                        <dd>A CSS class name to pass to the component.</dd>
+                        <dt><code>headerLevel</code> (optional)</dt>
+                        <dd>Header level to use for the tab container's title. Default is <code>H2</code>.</dd>
+                        <dt><code>manual</code> (optional)</dt>
+                        <dd>Whether to require manual tab activation. Boolean. Default is <code>false</code>.</dd>
+                        <dt><code>title</code> (optional)</dt>
+                        <dd>The title of the tab list. Default is 'Contents'.</dd>
+                    </dl>
+                </Configuration>
+
+                <Configuration componentName="Tab items">
+                    <p>Tab item components can use the following props:</p>
+                    <dl>
+                        <dt><code>className</code> (optional)</dt>
+                        <dd>A CSS class name to pass to the component.</dd>
+                        <dt><code>headerLevel</code> (optional)</dt>
+                        <dd>Header level to use for the tab container's title. Default is <code>H2</code>.</dd>
+                        <dt><code>id</code></dt>
+                        <dd>The ID of the tab's content, required for correct linking of tab and content.</dd>
+                        <dt><code>tabLabel</code></dt>
+                        <dd>The label text of the item's tab.</dd>
                     </dl>
                 </Configuration>
 
