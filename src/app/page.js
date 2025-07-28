@@ -1718,8 +1718,6 @@ export default function Home() {
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>Header level to use for the tab container's title. Default is <code>H2</code>.</dd>
                         <dt><code>id</code></dt>
                         <dd>The ID of the tab's content, required for correct linking of tab and content.</dd>
                         <dt><code>tabLabel</code></dt>
