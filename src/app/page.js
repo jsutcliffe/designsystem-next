@@ -16,7 +16,7 @@ import Details from '@scottish-government/designsystem-react/dist/components/det
 import ErrorMessage from '@scottish-government/designsystem-react/dist/components/error-message/error-message';
 import ErrorSummary from '@scottish-government/designsystem-react/dist/components/error-summary/error-summary';
 // feature header
-// file download
+import FileDownload from '@scottish-government/designsystem-react/dist/components/file-download/file-download';
 import HideThisPage from '@scottish-government/designsystem-react/dist/components/hide-this-page/hide-this-page';
 import InsetText from '@scottish-government/designsystem-react/dist/components/inset-text/inset-text';
 import Metadata from '@scottish-government/designsystem-react/dist/components/page-metadata/page-metadata';
@@ -100,8 +100,6 @@ export default function Home() {
 
 
         <>
-
-
             <main className="ds_wrapper" id="main-content">
                 <PageHeader
                     title="Design System React components"
@@ -159,6 +157,10 @@ export default function Home() {
                     {
                         href: '#section-error-summary',
                         title: 'Error summary'
+                    },
+                    {
+                        href: '#section-file-download',
+                        title: 'File download'
                     },
                     {
                         href: '#section-hide-this-page',
@@ -762,6 +764,38 @@ export default function Home() {
                         <dd>ID of the question or field to link to.</dd>
                         <dt><code>title</code></dt>
                         <dd>Text to use for the link text.</dd>
+                    </dl>
+                </Configuration>
+
+                <h2 className="dsjsx_example-title" id="section-file-download">File download</h2>
+
+                <Example>
+                    <FileDownload
+                        title="Scotland's Artificial Intelligence Strategy - Trustworthy, Ethical and Inclusive"
+                        fileSize="333 kB"
+                        fileType="8 page PDF"
+                        icon="Pdf"/>
+                </Example>
+
+                <Configuration componentName="File download">
+                    <p>File download components use the following props:</p>
+                    <dl>
+                        <dt><code>className</code> (optional)</dt>
+                        <dd>A CSS class name to pass to the component.</dd>
+                        <dt><code>cover</code> (optional)</dt>
+                        <dd>URL of a custom cover image.</dd>
+                        <dt><code>highlighted</code> (optional)</dt>
+                        <dd>Add a highlight to the file download. Boolean. Default is <code>false</code>.</dd>
+                        <dt><code>icon</code> (optional)</dt>
+                        <dd>Canned icon to use.</dd>
+                        <dt><code>fileSize</code> (optional)</dt>
+                        <dd>Description of the file size.</dd>
+                        <dt><code>fileType</code> (optional)</dt>
+                        <dd>A description of the file type.</dd>
+                        <dt><code>fileUrl</code></dt>
+                        <dd>The URL of the file to download.</dd>
+                        <dt><code>title</code></dt>
+                        <dd>The document title, used in the link text.</dd>
                     </dl>
                 </Configuration>
 
