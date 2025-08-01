@@ -2,51 +2,51 @@
 
 // "OFFICIAL" COMPONENTS
 
-import Accordion from '@scottish-government/designsystem-react/dist/components/accordion/accordion';
-import AspectBox from '@scottish-government/designsystem-react/dist/components/aspect-box/aspect-box';
-import BackToTop from '@scottish-government/designsystem-react/dist/components/back-to-top/back-to-top';
-import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/breadcrumbs/breadcrumbs';
-import Button from '@scottish-government/designsystem-react/dist/components/button/button';
-import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/checkbox/checkbox';
-import ConfirmationMessage from '@scottish-government/designsystem-react/dist/components/confirmation-message/confirmation-message';
+import Accordion from '@scottish-government/designsystem-react/dist/components/Accordion/Accordion';
+import AspectBox from '@scottish-government/designsystem-react/dist/components/AspectBox/AspectBox';
+import BackToTop from '@scottish-government/designsystem-react/dist/components/BackToTop/BackToTop';
+import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/Breadcrumbs/Breadcrumbs';
+import Button from '@scottish-government/designsystem-react/dist/components/Button/Button';
+import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
+import ConfirmationMessage from '@scottish-government/designsystem-react/dist/components/ConfirmationMessage/ConfirmationMessage';
 // contact details
-import CookieBanner from '@scottish-government/designsystem-react/dist/components/cookie-banner/cookie-banner';
-import DatePicker from '@scottish-government/designsystem-react/dist/components/date-picker/date-picker';
-import Details from '@scottish-government/designsystem-react/dist/components/details/details';
-import ErrorMessage from '@scottish-government/designsystem-react/dist/components/error-message/error-message';
-import ErrorSummary from '@scottish-government/designsystem-react/dist/components/error-summary/error-summary';
+import CookieBanner from '@scottish-government/designsystem-react/dist/components/CookieBanner/CookieBanner';
+import DatePicker from '@scottish-government/designsystem-react/dist/components/DatePicker/DatePicker';
+import Details from '@scottish-government/designsystem-react/dist/components/Details/Details';
+import ErrorMessage from '@scottish-government/designsystem-react/dist/components/ErrorMessage/ErrorMessage';
+import ErrorSummary from '@scottish-government/designsystem-react/dist/components/ErrorSummary/ErrorSummary';
 // feature header
-import FileDownload from '@scottish-government/designsystem-react/dist/components/file-download/file-download';
-import HideThisPage from '@scottish-government/designsystem-react/dist/components/hide-this-page/hide-this-page';
-import InsetText from '@scottish-government/designsystem-react/dist/components/inset-text/inset-text';
-import Metadata from '@scottish-government/designsystem-react/dist/components/page-metadata/page-metadata';
-import NotificationBanner from '@scottish-government/designsystem-react/dist/components/notification-banner/notification-banner';
-import NotificationPanel from '@scottish-government/designsystem-react/dist/components/notification-panel/notification-panel';
-import PageHeader from '@scottish-government/designsystem-react/dist/components/page-header/page-header';
-import Pagination from '@scottish-government/designsystem-react/dist/components/pagination/pagination';
-import PhaseBanner from '@scottish-government/designsystem-react/dist/components/phase-banner/phase-banner';
-import Question from '@scottish-government/designsystem-react/dist/components/question/question';
-import RadioGroup from '@scottish-government/designsystem-react/dist/components/radio-button/radio-button';
-import Select from '@scottish-government/designsystem-react/dist/components/select/select';
-import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/sequential-navigation/sequential-navigation';
-import SideNavigation from '@scottish-government/designsystem-react/dist/components/side-navigation/side-navigation';
+import FileDownload from '@scottish-government/designsystem-react/dist/components/FileDownload/FileDownload';
+import HideThisPage from '@scottish-government/designsystem-react/dist/components/HideThisPage/HideThisPage';
+import InsetText from '@scottish-government/designsystem-react/dist/components/InsetText/InsetText';
+import Metadata from '@scottish-government/designsystem-react/dist/components/PageMetadata/PageMetadata';
+import NotificationBanner from '@scottish-government/designsystem-react/dist/components/NotificationBanner/NotificationBanner';
+import NotificationPanel from '@scottish-government/designsystem-react/dist/components/NotificationPanel/NotificationPanel';
+import PageHeader from '@scottish-government/designsystem-react/dist/components/PageHeader/PageHeader';
+import Pagination from '@scottish-government/designsystem-react/dist/components/Pagination/Pagination';
+import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
+import Question from '@scottish-government/designsystem-react/dist/components/Question/Question';
+import RadioGroup from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioButton';
+import Select from '@scottish-government/designsystem-react/dist/components/Select/Select';
+import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/SequentialNavigation/SequentialNavigation';
+import SideNavigation from '@scottish-government/designsystem-react/dist/components/SideNavigation/SideNavigation';
 // site footer
-import SiteHeader from '@scottish-government/designsystem-react/dist/components/site-header/site-header';
-import SiteNavigation from '@scottish-government/designsystem-react/dist/components/site-navigation/site-navigation';
-import SiteSearch from '@scottish-government/designsystem-react/dist/components/site-search/site-search';
-import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
-import SummaryCard from '@scottish-government/designsystem-react/dist/components/summary-card/summary-card';
-import SummaryList from '@scottish-government/designsystem-react/dist/components/summary-list/summary-list';
-import Table from '@scottish-government/designsystem-react/dist/components/table/table';
-import Tabs from '@scottish-government/designsystem-react/dist/components/tabs/tabs';
-import Tag from '@scottish-government/designsystem-react/dist/components/tag/tag';
-import Textarea from '@scottish-government/designsystem-react/dist/components/textarea/textarea';
-import TextInput from '@scottish-government/designsystem-react/dist/components/text-input/text-input';
-import WarningText from '@scottish-government/designsystem-react/dist/components/warning-text/warning-text';
+import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
+import SiteNavigation from '@scottish-government/designsystem-react/dist/components/SiteNavigation/SiteNavigation';
+import SiteSearch from '@scottish-government/designsystem-react/dist/components/SiteSearch/SiteSearch';
+import SkipLinks from '@scottish-government/designsystem-react/dist/components/SkipLinks/SkipLinks';
+import SummaryCard from '@scottish-government/designsystem-react/dist/components/SummaryCard/SummaryCard';
+import SummaryList from '@scottish-government/designsystem-react/dist/components/SummaryList/SummaryList';
+import Table from '@scottish-government/designsystem-react/dist/components/Table/Table';
+import Tabs from '@scottish-government/designsystem-react/dist/components/Tabs/Tabs';
+import Tag from '@scottish-government/designsystem-react/dist/components/Tag/Tag';
+import Textarea from '@scottish-government/designsystem-react/dist/components/Textarea/Textarea';
+import TextInput from '@scottish-government/designsystem-react/dist/components/TextInput/TextInput';
+import WarningText from '@scottish-government/designsystem-react/dist/components/WarningText/WarningText';
 
 // SUPPORTING COMPONENTS
 
-import ScreenReaderText from '@scottish-government/designsystem-react/dist/common/screen-reader-text';
+import ScreenReaderText from '@scottish-government/designsystem-react/dist/common/ScreenReaderText';
 
 // UNPUBLISHED COMPONENTS
 
@@ -56,8 +56,8 @@ import ScreenReaderText from '@scottish-government/designsystem-react/dist/commo
 // category item
 // category list
 // content label
-import ContentsNav from '@scottish-government/designsystem-react/dist/components/contents-nav/contents-nav';
-import Icon from '@scottish-government/designsystem-react/dist/common/icon';
+import ContentsNav from '@scottish-government/designsystem-react/dist/components/ContentsNav/ContentsNav';
+import Icon from '@scottish-government/designsystem-react/dist/common/Icon';
 // link item (basically category item?)
 // link list (found in a page block on dynamic issue hub)
 // search controls
@@ -66,7 +66,7 @@ import Icon from '@scottish-government/designsystem-react/dist/common/icon';
 // site branding
 // sort options
 // step navigation (enhanced accordion)
-import TaskList from '@scottish-government/designsystem-react/dist/components/task-list/task-list';
+import TaskList from '@scottish-government/designsystem-react/dist/components/TaskList/TaskList';
 // field group
 // label (do we need a JSX label?)
 // prefilled value list (part of summary list)
@@ -303,8 +303,8 @@ export default function Home() {
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code></dt>
-                        <dd>Header level to use for the accordion items&apos; titles. Default is <code>H3</code>.</dd>
+                        <dt><code>headingLevel</code></dt>
+                        <dd>Heading level to use for the accordion items&apos; titles. Default is <code>H3</code>.</dd>
                         <dt><code>hideOpenAll</code> (optional)</dt>
                         <dd>Do not show the "open all" button. Boolean.</dd>
                     </dl>
@@ -314,8 +314,8 @@ export default function Home() {
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>Header level to use for the accordion item&apos;s title. It is better to let the parent set this for all of its accordion items.</dd>
+                        <dt><code>headingLevel</code> (optional)</dt>
+                        <dd>Heading level to use for the accordion item&apos;s title. It is better to let the parent set this for all of its accordion items.</dd>
                         <dt><code>id</code></dt>
                         <dd>ID to use for the accordion item if you want to override the automatically generated default for any reason.</dd>
                         <dt><code>open</code> (optional)</dt>
@@ -548,8 +548,8 @@ export default function Home() {
                         <dd>Value for an <code>aria-live</code> attribute on the confirmation message, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>The header level for the confirmation message&apos;s title. The default is <code>H3</code>. Changing the heading level does not alter the confirmation message&apos;s appearance.</dd>
+                        <dt><code>headingLevel</code> (optional)</dt>
+                        <dd>The heading level for the confirmation message&apos;s title. The default is <code>H3</code>. Changing the heading level does not alter the confirmation message&apos;s appearance.</dd>
                     </dl>
                 </Configuration>
 
@@ -880,8 +880,8 @@ export default function Home() {
                         <dd>Value for an <code>aria-live</code> attribute on the notification panel, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>The header level for the notification panel&apos;s message&apos;s title. The default is H1. Changing the heading level does not alter the notification panel&apos;s appearance.</dd>
+                        <dt><code>headingLevel</code> (optional)</dt>
+                        <dd>The heading level for the notification panel&apos;s message&apos;s title. The default is H1. Changing the heading level does not alter the notification panel&apos;s appearance.</dd>
                         <dt><code>title</code></dt>
                         <dd>Title of the notification panel.</dd>
                     </dl>
@@ -1543,8 +1543,8 @@ export default function Home() {
                         <dd>Array of summary card actions data.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>Header level to use for the summary card title. Default is <code>H3</code>.</dd>
+                        <dt><code>headingLevel</code> (optional)</dt>
+                        <dd>Heading level to use for the summary card title. Default is <code>H3</code>.</dd>
                         <dt><code>items</code></dt>
                         <dd>Array of summary list item data. Refer to the <a href="#summary-list-items">summary list items documentation</a>.</dd>
                         <dt><code>title</code></dt>
@@ -1738,8 +1738,8 @@ export default function Home() {
                         <dd>Whether to give each tab a border. Boolean. Default is <code>true</code>.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>headerLevel</code> (optional)</dt>
-                        <dd>Header level to use for the tab container's title. Default is <code>H2</code>.</dd>
+                        <dt><code>headingLevel</code> (optional)</dt>
+                        <dd>Heading level to use for the tab container's title. Default is <code>H2</code>.</dd>
                         <dt><code>manual</code> (optional)</dt>
                         <dd>Whether to require manual tab activation. Boolean. Default is <code>false</code>.</dd>
                         <dt><code>title</code> (optional)</dt>

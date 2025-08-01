@@ -3,8 +3,8 @@ import "@scottish-government/design-system/dist/css/design-system.css";
 import "./app.css";
 import "./highlight.css";
 
-import SkipLinks from '@scottish-government/designsystem-react/dist/components/skip-links/skip-links';
-import SiteHeader from '@scottish-government/designsystem-react/dist/components/site-header/site-header';
+import SkipLinks from '@scottish-government/designsystem-react/dist/components/SkipLinks/SkipLinks';
+import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
 
 export const metadata = {
     title: "SG Design System React",
