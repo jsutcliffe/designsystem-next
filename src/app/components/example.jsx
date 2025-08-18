@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-import Details from '@scottish-government/designsystem-react/dist/components/details/details';
+import Details from '@scottish-government/designsystem-react/dist/components/Details/Details';
 import Prism from 'prismjs';
 
 /**
@@ -18,7 +18,6 @@ const Example = function ({
     }
 
     const highlightedCode = Prism.highlight(
-        // reactElementToJSXString(children),
         reactElementToJSXString(children, {
             displayName: (p) => {
                 if (typeof p.type === 'function') {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Details from '@scottish-government/designsystem-react/dist/components/details/details'
+import Details from '@scottish-government/designsystem-react/dist/components/Details/Details'
 
 /**
  * @param {Object} props - Properties for the element

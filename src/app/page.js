@@ -7,7 +7,8 @@ import AspectBox from '@scottish-government/designsystem-react/dist/components/A
 import BackToTop from '@scottish-government/designsystem-react/dist/components/BackToTop/BackToTop';
 import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/Breadcrumbs/Breadcrumbs';
 import Button from '@scottish-government/designsystem-react/dist/components/Button/Button';
-import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
+import Checkbox from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
+import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/CheckboxGroup';
 import ConfirmationMessage from '@scottish-government/designsystem-react/dist/components/ConfirmationMessage/ConfirmationMessage';
 // contact details
 import CookieBanner from '@scottish-government/designsystem-react/dist/components/CookieBanner/CookieBanner';
@@ -26,11 +27,12 @@ import PageHeader from '@scottish-government/designsystem-react/dist/components/
 import Pagination from '@scottish-government/designsystem-react/dist/components/Pagination/Pagination';
 import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
 import Question from '@scottish-government/designsystem-react/dist/components/Question/Question';
-import RadioGroup from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioButton';
+import RadioButton from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioButton';
+import RadioGroup from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioGroup';
 import Select from '@scottish-government/designsystem-react/dist/components/Select/Select';
 import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/SequentialNavigation/SequentialNavigation';
 import SideNavigation from '@scottish-government/designsystem-react/dist/components/SideNavigation/SideNavigation';
-// site footer
+import SiteFooter from '@scottish-government/designsystem-react/dist/components/SiteFooter/SiteFooter';
 import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
 import SiteNavigation from '@scottish-government/designsystem-react/dist/components/SiteNavigation/SiteNavigation';
 import SiteSearch from '@scottish-government/designsystem-react/dist/components/SiteSearch/SiteSearch';
@@ -96,11 +98,8 @@ const suggestionMappingFunction = function (suggestionsObj) {
 export default function Home() {
 
     return (
-
-
-
         <>
-            <main className="ds_wrapper" id="main-content">
+            <main id="main-content">
                 <PageHeader
                     title="Design System React components"
                 >
@@ -109,160 +108,48 @@ export default function Home() {
                     </Metadata>
                 </PageHeader>
 
-                <ContentsNav label="Sections in this page" items={[
-                    {
-                        href: '#section-accordion',
-                        title: 'Accordion'
-                    },
-                    {
-                        href: '#section-aspect-box',
-                        title: 'Aspect box'
-                    },
-                    {
-                        href: '#section-back-to-top',
-                        title: 'Back to top'
-                    },
-                    {
-                        href: '#section-breadcrumbs',
-                        title: 'Breadcrumbs'
-                    },
-                    {
-                        href: '#section-button',
-                        title: 'Button'
-                    },
-                    {
-                        href: '#section-checkbox',
-                        title: 'Checkbox'
-                    },
-                    {
-                        href: '#section-confirmation-message',
-                        title: 'Confirmation message'
-                    },
-                    {
-                        href: '#section-contents-nav',
-                        title: 'Contents nav'
-                    },
-                    {
-                        href: '#section-cookie-banner',
-                        title: 'Cookie banner'
-                    },
-                    {
-                        href: '#section-date-picker',
-                        title: 'Date picker'
-                    },
-                    {
-                        href: '#section-details',
-                        title: 'Details'
-                    },
-                    {
-                        href: '#section-error-summary',
-                        title: 'Error summary'
-                    },
-                    {
-                        href: '#section-file-download',
-                        title: 'File download'
-                    },
-                    {
-                        href: '#section-hide-this-page',
-                        title: 'Hide this page'
-                    },
-                    {
-                        href: '#section-inset-text',
-                        title: 'Inset text'
-                    },
-                    {
-                        href: '#section-notification-banner',
-                        title: 'Notification banner'
-                    },
-                    {
-                        href: '#section-notification-panel',
-                        title: 'Notification panel'
-                    },
-                    {
-                        href: '#section-page-header',
-                        title: 'Page header'
-                    },
-                    {
-                        href: '#section-page-metadata',
-                        title: 'Page metadata'
-                    },
-                    {
-                        href: '#section-pagination',
-                        title: 'Pagination'
-                    },
-                    {
-                        href: '#section-phase-banner',
-                        title: 'Phase banner'
-                    },
-                    {
-                        href: '#section-question',
-                        title: 'Question'
-                    },
-                    {
-                        href: '#section-radio',
-                        title: 'Radio button'
-                    },
-                    {
-                        href: '#section-select',
-                        title: 'Select (dropdown)'
-                    },
-                    {
-                        href: '#section-sequential-navigation',
-                        title: 'Sequential navigation'
-                    },
-                    {
-                        href: '#section-side-navigation',
-                        title: 'Side navigation'
-                    },
-                    {
-                        href: '#section-site-header',
-                        title: 'Site header'
-                    },
-                    {
-                        href: '#section-site-navigation',
-                        title: 'Site navigation'
-                    },
-                    {
-                        href: '#section-site-search',
-                        title: 'Site search'
-                    },
-                    {
-                        href: '#section-skip-links',
-                        title: 'Skip links'
-                    },
-                    {
-                        href: '#section-summary-card',
-                        title: 'Summary card'
-                    },
-                    {
-                        href: '#section-summary-list',
-                        title: 'Summary list'
-                    },
-                    {
-                        href: '#section-table',
-                        title: 'Table'
-                    },
-                    {
-                        href: '#section-tabs',
-                        title: 'Tabs'
-                    },
-                    {
-                        href: '#section-tag',
-                        title: 'Tag'
-                    },
-                    {
-                        href: '#section-task-list',
-                        title: 'Task list'
-                    },
-                    {
-                        href: '#section-text-input',
-                        title: 'Text input'
-                    },
-                    {
-                        href: '#section-textarea',
-                        title: 'Textarea'
-                    }
-                ]}/>
+                <ContentsNav ariaLabel="Sections in this page">
+                    <ContentsNav.Item href="#section-accordion">Accordion</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-aspect-box">Aspect box</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-back-to-top">Back to top</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-breadcrumbs">Breadcrumbs</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-button">Button</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-checkbox">Checkbox</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-confirmation-message">Confirmation message</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-contents-nav">Contents nav</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-cookie-banner">Cookie banner</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-date-picker">Date picker</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-details">Details</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-error-summary">Error summary</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-file-download">File download</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-hide-this-page">Hide this page</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-inset-text">Inset text</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-notification-banner">Notification banner</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-notification-panel">Notification panel</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-page-header">Page header</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-page-metadata">Page metadata</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-pagination">Pagination</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-phase-banner">Phase banner</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-question">Question</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-radio">Radio button</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-select">Select (dropdown)</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-sequential-navigation">Sequential navigation</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-side-navigation">Side navigation</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-site-footer">Site footer</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-site-header">Site header</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-site-navigation">Site navigation</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-site-search">Site search</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-skip-links">Skip links</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-summary-card">Summary card</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-summary-list">Summary list</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-table">Table</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-tabs">Tabs</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-tag">Tag</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-task-list">Task list</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-text-input">Text input</ContentsNav.Item>
+                    <ContentsNav.Item href="#section-textarea">Textarea</ContentsNav.Item>
+                </ContentsNav>
+
 
 
 
@@ -299,7 +186,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Accordion">
-                    <p>Accordion components can use the following props:</p>
+                    <p><code>Accordion</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -310,7 +197,7 @@ export default function Home() {
                     </dl>
                 </Configuration>
                 <Configuration componentName="Accordion item">
-                    <p>Accordion components&apos; <code>Accordion.Item</code> children can use the following props:</p>
+                    <p><code>AccordionItem</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -338,7 +225,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Aspect box">
-                    <p>Aspect box components can use the following props:</p>
+                    <p><code>AspectBox</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -361,7 +248,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Back to top">
-                    <p>Back to top components can use the following prop:</p>
+                    <p><code>BackToTop</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -373,34 +260,20 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-breadcrumbs">Breadcrumbs</h2>
 
                 <Example>
-                    <Breadcrumbs
-                        items={[
-                            { href: 'home', title: 'Home' },
-                            { href: 'category', title: 'Category' },
-                            { title: 'Page' }
-                        ]}
-                        hideLastItem
-                    />
+                    <Breadcrumbs>
+                        <Breadcrumbs.Item href="#home">Home</Breadcrumbs.Item>
+                        <Breadcrumbs.Item href="#category">Category</Breadcrumbs.Item>
+                        <Breadcrumbs.Item>Page</Breadcrumbs.Item>
+                    </Breadcrumbs>
                 </Example>
 
-                <Configuration componentName="Breadcrumbs">
-                    <p>Breadcrumbs components can use the following props:</p>
+                <Configuration componentName="Breadcrumb item">
+                    <p><code>Breadcrumbs.Item</code> components can use the following props:</p>
                     <dl>
-                        <dt><code>className</code> (optional)</dt>
-                        <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>hideLastItem</code> (optional)</dt>
-                        <dd>Will set the final breadcrumb (i.e. the current page) to visually hidden if present. Boolean.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of breadcrumb item data.</dd>
-                    </dl>
-                </Configuration>
-                <Configuration componentName="Breadcrumb items">
-                    <p>Objects in the bredcrumb items array can have the following properties:</p>
-                    <dl>
-                        <dt><code>href</code></dt>
-                        <dd>URL to use for the breadcrumb item. Omit the <code>href</code> prop from the last breadcrumb item (representing the current page) to make it display without a link. This is the preferred way of presenting breadcrumbs in the Design System.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text to use for a breadcrumb item.</dd>
+                        <dt><code>hidden</code> (optional)</dt>
+                        <dd>Applies a <code>visually-hidden</code> CSS class, for if you want to hide the last breadcrumb.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                     </dl>
                 </Configuration>
 
@@ -437,7 +310,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Button">
-                    <p>Button components can use the following props:</p>
+                    <p><code>Button</code> components can use the following props:</p>
                     <dl>
                         <dt><code>buttonStyle</code> (optional)</dt>
                         <dd>The button style to use. Options are:
@@ -476,41 +349,40 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-checkbox">Checkbox</h2>
 
                 <Example>
-                    <CheckboxGroup items={[
-                        {
-                            id: 'universal-credit',
-                            label: 'Universal Credit',
-                            checked: true
-                        },
-                        {
-                            id: 'pensioncredit',
-                            label: 'Pension Credit'
-                        },
-                        {
-                            id: 'jsa',
-                            label: 'Income-based Job Seeker\'s Allowance',
-                        },
-                        {
-                            exclusive: true,
-                            id: 'none',
-                            label: 'No, I do not receive any of these benefits',
-                        }
-                    ]}/>
+                    <CheckboxGroup>
+                        <Checkbox
+                            id="universal-credit"
+                            label="Universal Credit"
+                            checked
+                        />
+                        <Checkbox
+                            id="pension-credit"
+                            label="Pension Credit"
+                        />
+                        <Checkbox
+                            id="jsa"
+                            label="Income-based Job Seeker's Allowance"
+                        />
+                        <Checkbox
+                            id="none"
+                            label="No, I do not receive any of these benefits"
+                            exclusive
+                        />
+                    </CheckboxGroup>
                 </Example>
 
                 <Configuration componentName="Checkbox group">
-                    <p>Use a <code>CheckboxGroup</code> component to group checkboxes. Checkbox group components can use the following props:</p>
+                    <p>Use a <code>CheckboxGroup</code> component to group checkboxes. <code>CheckboxGroup</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of checkbox items.</dd>
                         <dt><code>small</code> (optional)</dt>
-                        <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean.</dd>
+                        <dd>Whether to use the &lsquo;small&rsquo; radio button variant. Boolean.</dd>
                     </dl>
                 </Configuration>
+
                 <Configuration componentName="Checkbox items">
-                    <p>Objects in the checkbox items array can have the following properties:</p>
+                    <p><code>Checkbox</code> components have the following properties:</p>
                     <dl>
                         <dt><code>checked</code> (optional)</dt>
                         <dd>Whether the checkbox should be checked on load.</dd>
@@ -529,7 +401,7 @@ export default function Home() {
                         <dt><code>onChange</code> (optional)</dt>
                         <dd>Function to fire in response to a change event.</dd>
                         <dt><code>small</code> (optional)</dt>
-                        <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean. It is better to set this on the <code>CheckboxGroup</code> component.</dd>
+                        <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean. Alternatively you can set this on an ancestor <code>CheckboxGroup</code> component.</dd>
                     </dl>
                 </Configuration>
 
@@ -542,7 +414,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Confirmation message">
-                    <p>Confirmation message components can use the following prop:</p>
+                    <p><code>ConfirmationMessage</code> components can use the following prop:</p>
                     <dl>
                         <dt><code>ariaLive</code> (optional)</dt>
                         <dd>Value for an <code>aria-live</code> attribute on the confirmation message, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
@@ -556,53 +428,36 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-contents-nav">Contents nav</h2>
 
                 <Example>
-                    <ContentsNav label="Pages in this guide" items={[
-                        {
-                            title: 'Apply for Blue Badge',
-                            current: true
-                        },
-                        {
-                            title: 'Eligibility',
-                            href: '#2'
-                        },
-                        {
-                            title: 'Using your Blue Badge',
-                            href: '#3'
-                        },
-                        {
-                            title: 'Report a lost, stolen or misuesd Blue Badge',
-                            href: '#4'
-                        },
-                        {
-                            title: 'Changing or handing back a Blue Badge',
-                            href: '#5'
-                        }
-                    ]} />
+                    <ContentsNav ariaLabel="Pages in this guide">
+                        <ContentsNav.Item current>Apply for Blue Badge</ContentsNav.Item>
+                        <ContentsNav.Item href="#2">Eligibility</ContentsNav.Item>
+                        <ContentsNav.Item href="#3">Using your Blue Badge</ContentsNav.Item>
+                        <ContentsNav.Item href="#4">Report a lost, stolen or misuesd Blue Badge</ContentsNav.Item>
+                        <ContentsNav.Item href="#5">Changing or handing back a Blue Badge</ContentsNav.Item>
+                    </ContentsNav>
                 </Example>
 
                 <Configuration componentName="Contents navigation">
-                    <p>Contents nav components can use the following props:</p>
+                    <p><code>ContentsNav</code> components can use the following props:</p>
                     <dl>
+                        <dt><code>ariaLabel</code> (optional)</dt>
+                        <dd>Text to use for the content nav&apos;s <code>aria-label</code> property, which is required for accessibility. Default is &lsquo;Pages in this section&rsquo;.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of content nav items.</dd>
-                        <dt><code>label</code> (optional)</dt>
-                        <dd>Text to use for the content nav&apos;s <code>aria-label</code> property, which is required for accessibility. Default is &lsquo;Pages in this section&rsquo;.</dd>
                         <dt><code>title</code> (optional)</dt>
                         <dd>The title for the contents nav. Default is &lsquo;Contents&rsquo;.</dd>
                     </dl>
                 </Configuration>
 
                 <Configuration componentName="Contents nav items">
-                    <p>Objects in the contents nav items array can use the following propserties:</p>
+                    <p><code>ContentsNav.Item</code> components nav items array can use the following propserties:</p>
                     <dl>
                         <dt><code>current</code> (optional)</dt>
                         <dd>Whether the nav item is for the current page. Boolean.</dd>
                         <dt><code>href</code> (optional)</dt>
                         <dd>URL of the contents nav item</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text of the content nav item</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                     </dl>
                 </Configuration>
 
@@ -623,7 +478,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Cookie banner">
-                    <p>Cookie banner components can use the following props:</p>
+                    <p><code>CookieBanner</code> components can use the following props:</p>
 
                     <dl>
                         <dt><code>className</code> (optional)</dt>
@@ -637,7 +492,7 @@ export default function Home() {
 
                 <h3>Cookie confirmation banner</h3>
 
-                <p>Use a notification banner for the confimation message, with an additional CSS class for the 'success' colourway.</p>
+                <p>Use a <code>NotificationBanner</code> for the confirmation message, with an additional CSS class for the 'success' colourway.</p>
 
                 <Example>
                     <NotificationBanner id="cookie-confirm" close className="ds_notification--cookie-success">
@@ -675,16 +530,16 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Date picker">
-                    <p>Date picker components can use the following props:</p>
+                    <p><code>DatePicker</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>disabledDates</code> (optional)</dt>
                         <dd>Space-separated list of dates to disable in the date picker. Uses the format <code>dd/mm/yyyy</code>.</dd>
-                        <dt><code>error</code> (optional)</dt>
-                        <dd>Whether the date picker is in an error state. Boolean.</dd>
                         <dt><code>errorMessage</code> (optional)</dt>
                         <dd>Text to use for an error message.</dd>
+                        <dt><code>hasError</code> (optional)</dt>
+                        <dd>Whether the date picker is in an error state. Boolean.</dd>
                         <dt><code>hintText</code> (optional)</dt>
                         <dd>Text to use for a date picker hint text.</dd>
                         <dt><code>id</code></dt>
@@ -726,7 +581,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Details">
-                    <p>Details components can use the following prop:</p>
+                    <p><code>Details</code> components can use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -738,32 +593,30 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-error-summary">Error summary</h2>
 
                 <Example>
-                    <ErrorSummary errors={[
-                        {fragmentId: 'did-resolve', title: 'Did this resolve your issue?'},
-                        {fragmentId: 'what-topics', title: 'What topics are you interested in?'},
-                        {fragmentId: 'more-detail', title: 'Please provide more detail'}
-                    ]} />
+                    <ErrorSummary>
+                        <ErrorSummary.Item fragmentId="did-resolve">Did this resolve your issue?</ErrorSummary.Item>
+                        <ErrorSummary.Item fragmentId="what-topics">What topics are you interested in?</ErrorSummary.Item>
+                        <ErrorSummary.Item fragmentId="more-detail">Please provide more detail</ErrorSummary.Item>
+                    </ErrorSummary>
                 </Example>
 
                 <Configuration componentName="Error summary">
-                    <p>Error summary can have use the following props:</p>
+                    <p><code>ErrorSummary</code> components can have use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>errors</code> (optional)</dt>
-                        <dd>Array of error objects.</dd>
                         <dt><code>title</code> (optional)</dt>
                         <dd>The title of the error summary. Default is &lsquo;There is a problem&rsquo;.</dd>
                     </dl>
                 </Configuration>
 
-                <Configuration componentName="Error summary error links">
-                    <p>Objects in the error summary &lsquo;errors&rsquo; array can use the following properties:</p>
+                <Configuration componentName="Error summary items">
+                    <p><code>ErrorSummary.Item</code> components can use the following props:</p>
                     <dl>
                         <dt><code>fragmentId</code> (optional)</dt>
                         <dd>ID of the question or field to link to.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text to use for the link text.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                     </dl>
                 </Configuration>
 
@@ -774,11 +627,12 @@ export default function Home() {
                         title="Scotland's Artificial Intelligence Strategy - Trustworthy, Ethical and Inclusive"
                         fileSize="333 kB"
                         fileType="8 page PDF"
+                        fileUrl="#"
                         icon="Pdf"/>
                 </Example>
 
                 <Configuration componentName="File download">
-                    <p>File download components use the following props:</p>
+                    <p><code>FileDownload</code> components use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -806,7 +660,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Hide this page">
-                    <p>Hide this page can have use the following props:</p>
+                    <p><code>HideThisPage</code> components can have use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -824,7 +678,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Inset text">
-                    <p>Inset text can have use the following prop:</p>
+                    <p><code>InsetText</code> components can have use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -840,29 +694,29 @@ export default function Home() {
                 </Example>
 
                 <Example title="Notification banner with icon and close">
-                    <NotificationBanner icon="PriorityHigh" iconColour iconInverse close>
+                    <NotificationBanner icon="PriorityHigh" hasColourIcon hasInverseIcon close>
                         <p>We need to tell you about <a href="#notification">something</a></p>
                     </NotificationBanner>
                 </Example>
 
                 <Configuration componentName="Notification banner">
-                    <p>Notification banner components can use the following props:</p>
+                    <p><code>NotificationBanner</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>close</code> (optional)</dt>
                         <dd>Shows the &lsquo;close&rsquo; button on the notification banner. Boolean.</dd>
+                        <dt><code>hasColourIcon</code> (optional)</dt>
+                        <dd>Makes the icon display in the alternative colour scheme (yellow). Boolean.</dd>
+                        <dt><code>hasInverseIcon</code> (optional)</dt>
+                        <dd>Makes the icon be inverted against a circle background. Boolean.</dd>
                         <dt><code>icon</code> (optional)</dt>
                         <dd>Shows the &lsquo;high priority&rsquo; icon on the notification banner. Boolean.</dd>
-                        <dt><code>iconColour</code> (optional)</dt>
-                        <dd>Makes the icon display in the alternative colour scheme (yellow). Boolean.</dd>
-                        <dt><code>iconInverse</code> (optional)</dt>
-                        <dd>Makes the icon be inverted against a circle background. Boolean.</dd>
                         <dt><code>title</code> (optional)</dt>
                         <dd>A hidden title for the notification banner, useful for screen reader users. Default is &lsquo;Information&rsquo;.</dd>
                     </dl>
 
-                    <p>Both <code>iconColour</code> and <code>iconInverse</code> can be used together. This combines the effects of both modifiers.</p>
+                    <p>Both <code>hasColourIcon</code> and <code>hasInverseIcon</code> can be used together. This combines the effects of both modifiers.</p>
                 </Configuration>
 
                 <h2 className="dsjsx_example-title" id="section-notification-panel">Notification panel</h2>
@@ -874,7 +728,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Notification panel">
-                    <p>Notification panel components can use the following prop:</p>
+                    <p><code>NotificationPanel</code> components can use the following props:</p>
                     <dl>
                         <dt><code>ariaLive</code> (optional)</dt>
                         <dd>Value for an <code>aria-live</code> attribute on the notification panel, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>
@@ -925,7 +779,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Page header">
-                    <p>Page header components can use the following props:</p>
+                    <p><code>PageHeader</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -960,7 +814,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Page metadata">
-                    <p>Page metadata components can use the following prop:</p>
+                    <p><code>Metadata</code> components can use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -969,7 +823,7 @@ export default function Home() {
                     </dl>
                 </Configuration>
                 <Configuration componentName="Medatata item">
-                    <p>Page metadata components can have any number of <code>Metadata.Item</code> children. Metadata item components can use the following props:</p>
+                    <p><code>Metadata</code> components can have any number of <code>Metadata.Item</code> children. Metadata item components can use the following props:</p>
                     <dl>
                         <dt><code>name</code></dt>
                         <dd>The name or key of the metadata item. Boolean.</dd>
@@ -992,13 +846,15 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Pagination">
-                    <p>Pagination components can use the following props:</p>
+                    <p><code>Pagination</code> components can use the following props:</p>
                     <dl>
                         <dt><code>ariaLabel</code> (optional)</dt>
                         <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code> element. Default is &lsquo;Pages&rsquo;.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>onclick</code> (optional)</dt>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output. Used on all links in the pagination.</dd>
+                        <dt><code>onClick</code> (optional)</dt>
                         <dd>Function to fire in response to a click event on pagination links.</dd>
                         <dt><code>padding</code> (optional)</dt>
                         <dd>Number of other pages to show on either side of the current page. Default is 1.</dd>
@@ -1043,7 +899,7 @@ export default function Home() {
 
                 <Example title="Question with error">
                     <Question
-                        error
+                        hasError
                     >
                         <TextInput
                             error="true"
@@ -1060,12 +916,26 @@ export default function Home() {
                         legend="Do you receive any of these benefits"
                         tagName="fieldset"
                     >
-                        <CheckboxGroup items={[
-                            {label: 'Universal Credit', id: 'universalcredit-question'},
-                            {label: 'Pension Credit', id: 'pensioncredit-question'},
-                            {label: 'Income-based Job Seeker\'s Allowance', id: 'jsa-question'},
-                            {label: 'No, I do not receive any of these benefits', id: 'noneCheckbox-question', exclusive: true}
-                        ]}/>
+                        <CheckboxGroup>
+                            <Checkbox
+                                id="universal-credit"
+                                label="Universal Credit"
+                                checked
+                            />
+                            <Checkbox
+                                id="pension-credit"
+                                label="Pension Credit"
+                            />
+                            <Checkbox
+                                id="jsa"
+                                label="Income-based Job Seeker's Allowance"
+                            />
+                            <Checkbox
+                                id="none"
+                                label="No, I do not receive any of these benefits"
+                                exclusive
+                            />
+                        </CheckboxGroup>
                     </Question>
                 </Example>
 
@@ -1077,24 +947,38 @@ export default function Home() {
                         legend="Do you receive any of these benefits"
                         tagName="fieldset"
                     >
-                        <CheckboxGroup items={[
-                            {label: 'Universal Credit', id: 'universalcredit-question-error'},
-                            {label: 'Pension Credit', id: 'pensioncredit-question-error'},
-                            {label: 'Income-based Job Seeker\'s Allowance', id: 'jsa-question-error'},
-                            {label: 'No, I do not receive any of these benefits', id: 'noneCheckbox-question-error', exclusive: true}
-                        ]}/>
+                        <CheckboxGroup>
+                            <Checkbox
+                                id="universal-credit"
+                                label="Universal Credit"
+                                checked
+                            />
+                            <Checkbox
+                                id="pension-credit"
+                                label="Pension Credit"
+                            />
+                            <Checkbox
+                                id="jsa"
+                                label="Income-based Job Seeker's Allowance"
+                            />
+                            <Checkbox
+                                id="none"
+                                label="No, I do not receive any of these benefits"
+                                exclusive
+                            />
+                        </CheckboxGroup>
                     </Question>
                 </Example>
 
                 <Configuration componentName="Question">
-                    <p>Question components can use the following props:</p>
+                    <p><code>Question</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>error</code> (optional)</dt>
-                        <dd>Whether the question is in an error state. Boolean.</dd>
                         <dt><code>errorMessage</code> (optional)</dt>
                         <dd>Text for a question&apos;s <code>ErrorMessage</code> component. For use when the question uses a fieldset.</dd>
+                        <dt><code>hasError</code> (optional)</dt>
+                        <dd>Whether the question is in an error state. Boolean.</dd>
                         <dt><code>hintText</code> (optional)</dt>
                         <dd>Text for a question&apos;s <code>HintText</code> component. For use when the question uses a fieldset.</dd>
                         <dt><code>legend</code> (optional)</dt>
@@ -1109,46 +993,29 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-radio">Radio button</h2>
 
                 <Example>
-                    <RadioGroup name="propertyType" items={[
-                        {
-                            label: "Flat",
-                            id: "flat-radio"
-                        },
-                        {
-                            label: "Bungalow",
-                            id: "bungalow-radio"
-                        },
-                        {
-                            label: "Cottage",
-                            id: "cottage-radio"
-                        },
-                        {
-                            label: "Terraced house",
-                            id: "terraced-radio"
-                        },
-                        {
-                            label: "Semi-detached house",
-                            id: "semi-radio"
-                        },
-                        {
-                            label: "Detached house",
-                            id: "detached-radio"
-                        }]}/>
+                    <RadioGroup name="propertyType">
+                        <RadioButton label="Flat" id="flat-radio"/>
+                        <RadioButton label="Bungalow" id="bungalow-radio"/>
+                        <RadioButton label="Cottage" id="cottage-radio"/>
+                        <RadioButton label="Terraced house" id="terraced-radio"/>
+                        <RadioButton label="Semi-detached house" id="semi-radio"/>
+                        <RadioButton label="Detached house" id="detached-radio"/>
+                    </RadioGroup>
                 </Example>
 
                 <Example title="Radio buttons with hint text">
-                    <RadioGroup name="paymentType" items={[
-                        {
-                            label: "Advance",
-                            id: "advance-radio",
-                            hintText: "This means you're paid for the period coming up, e.g. the month ahead"
-                        },
-                        {
-                            label: "Arrears",
-                            id: "arrears-radio",
-                            hintText: "This means you're paid for the time that's just passed, e.g. for the last month"
-                        }
-                    ]}/>
+                    <RadioGroup name="paymentType">
+                        <RadioButton
+                            label="Advance"
+                            id="advance-radio"
+                            hintText="This means you're paid for the period coming up, e.g. the month ahead"
+                        />
+                        <RadioButton
+                            label="Arrears"
+                            id="arrears-radio"
+                            hintText="This means you're paid for the time that's just passed, e.g. for the last month"
+                        />
+                    </RadioGroup>
                 </Example>
 
                 <Configuration componentName="Radio group">
@@ -1158,16 +1025,14 @@ export default function Home() {
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>inline</code> (optional)</dt>
                         <dd>Whether to display the radio buttons in the group inline instead of stacked. Boolean.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of radio button items.</dd>
                         <dt><code>name</code></dt>
                         <dd>Value for the <code>name</code> attribute on radio buttons in the group.</dd>
                         <dt><code>small</code> (optional)</dt>
-                        <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean.</dd>
+                        <dd>Whether to use the &lsquo;small&rsquo; radio button variant. Boolean.</dd>
                     </dl>
                 </Configuration>
-                <Configuration componentName="Radio group items">
-                    <p>Objects in the radio group&apos;s items array can use the following propserties:</p>
+                <Configuration componentName="Radio buttons">
+                    <p><code>RadioButton</code> components can use the following props:</p>
                     <dl>
                         <dt><code>checked</code> (optional)</dt>
                         <dd>Whether the radio should be selected on load.</dd>
@@ -1178,13 +1043,13 @@ export default function Home() {
                         <dt><code>label</code></dt>
                         <dd>Text to use for the radio button&apos;s associated label.</dd>
                         <dt><code>name</code> (optional)</dt>
-                        <dd>Value to use for the radio button&apos;s <code>name</code> attribute. It is better to set a name on a parent <code>RadioGroup</code> element instead.</dd>
+                        <dd>Value to use for the radio button&apos;s <code>name</code> attribute. Alternatively you can set this on an ancestor <code>RadioGroup</code> component.</dd>
                         <dt><code>onBlur</code> (optional)</dt>
                         <dd>Function to fire in response to a blur event.</dd>
                         <dt><code>onChange</code> (optional)</dt>
                         <dd>Function to fire in response to a change event.</dd>
                         <dt><code>small</code> (optional)</dt>
-                        <dd>Whether to use the &lsquo;small&rsquo; radio button variant. Boolean. It is better to set this on the <code>RadioGroup</code> component.</dd>
+                        <dd>Whether to use the &lsquo;small&rsquo; radio button variant. Boolean. Alternatively you can set this on an ancestor <code>RadioGroup</code> component.</dd>
                     </dl>
                 </Configuration>
 
@@ -1196,35 +1061,24 @@ export default function Home() {
                         id="select-component"
                         label="Choose a component"
                         placeholder="Choose a component"
-                        options={[
-                            {
-                                value: 'accordion',
-                                text: 'Accordion'
-                            },
-                            {
-                                value: 'breadcrumbs',
-                                text: 'Breadcrumbs'
-                            },
-                            {
-                                value: 'button',
-                                text: 'Button'
-                            }
-                        ]}
                     >
+                        <option value="accordion">Accordion</option>
+                        <option value="breadcrumbs">Breadcrumbs</option>
+                        <option value="button">Button</option>
                     </Select>
                 </Example>
 
                 <Configuration componentName="Select">
-                    <p>Select components can use the following props:</p>
+                    <p><code>Select</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>defaultValue</code> (optional)</dt>
                         <dd>The ID of the option that you want selected on page load.</dd>
-                        <dt><code>error</code> (optional)</dt>
-                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>errorMessage</code> (optional)</dt>
                         <dd>Text to use for an error message.</dd>
+                        <dt><code>hasError</code> (optional)</dt>
+                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>hintText</code> (optional)</dt>
                         <dd>Text to use for a select&apos;s hint text.</dd>
                         <dt><code>id</code></dt>
@@ -1246,159 +1100,193 @@ export default function Home() {
                     </dl>
                 </Configuration>
 
-                <Configuration componentName="Select 'option' items">
-                    <p>Objects in the &lsquo;options&rsquo; array can use the following properties:</p>
-                    <dl>
-                        <dt><code>text</code></dt>
-                        <dd>The text of the <code>option</code> element.</dd>
-                        <dt><code>value</code> (optional)</dt>
-                        <dd>The <code>value</code> attribute of the <code>option</code> element.</dd>
-                    </dl>
-                </Configuration>
-
                 <h2 className="dsjsx_example-title" id="section-sequential-navigation">Sequential navigation</h2>
 
                 <Example>
-                    <SequentialNavigation
-                        next={{ title: 'Eligibility: who can have one?', href: '#next' }}
-                        previous={{ title: 'Apply for or renew a Blue Badge?', href: '#prev' }}
-                    />
+                    <SequentialNavigation>
+                        <SequentialNavigation.Previous href="#previous">
+                            Apply for or renew a Blue Badge
+                        </SequentialNavigation.Previous>
+                        <SequentialNavigation.Next href="#next">
+                            Eligibility: who can have one?
+                        </SequentialNavigation.Next>
+                    </SequentialNavigation>
                 </Example>
 
                 <Configuration componentName="Sequential navigation">
-                    <p>Sequential navigation uses the following props:</p>
+                    <p><code>SequentialNavigation</code> components use the following props:</p>
                     <dl>
                         <dt><code>ariaLabel</code> (optional)</dt>
                         <dd>Text to use for an <code>aria-label</code> attribute on the <code>nav</code> element. Default is &lsquo;Article navigation&rsquo;.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>next</code> (optional)</dt>
-                        <dd>Object containing data for the &lsquo;next&rsquo; link.</dd>
-                        <dt><code>previous</code> (optional)</dt>
-                        <dd>Object containing data for the &lsquo;previous&rsquo; link.</dd>
                     </dl>
                 </Configuration>
 
-                <Configuration componentName="Sequential navigation 'next' and 'previous'">
-                    <p>The values for &lsquo;next&rsquo; and &lsquo;previous&rsquo; are both object with the following properties:</p>
+                <Configuration componentName="Sequential navigation links">
+                    <p><code>SequentialNavigation.Next</code> and <code>SequentialNavigation.Previous</code> components use the following props:</p>
                     <dl>
                         <dt><code>href</code></dt>
-                        <dd>The destination URL.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text to use for the link text.</dd>
+                        <dd>URL of the page being linked to.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
+                        <dt><code>textLabel</code> (optional)</dt>
+                        <dd>String to use for the label that precedes the link text. Defaults to &lsquo;Previous&rsquo; and &lsquo;Next&rsquo;</dd>
                     </dl>
                 </Configuration>
 
                 <h2 className="dsjsx_example-title" id="section-side-navigation">Side navigation</h2>
 
                 <Example>
-                    <SideNavigation items={[
-                        {
-                            title: 'apples',
-                            href: '#apples',
-                            items: [
-                                {
-                                    title: 'Green apples',
-                                    href: '#green-apples',
-                                    items: [
-                                        {
-                                            title: 'Bramley',
-                                            current: true
-                                        },
-                                        {
-                                            title: 'Granny Smith',
-                                            href: '#granny-smith'
-                                        }
-                                    ]
-                                },
-                                {
-                                    title: 'Red apples',
-                                    href: '#red-apples'
-                                }
-                            ]
-                        },
-                        {
-                            title: 'Bananas',
-                            href: '#bananas'
-                        },
-                        {
-                            title: 'Cherries',
-                            href: '#cherries'
-                        },
-                        {
-                            title: 'Dates',
-                            href: '#dates'
-                        }
-                    ]}/>
+                    <SideNavigation>
+                        <SideNavigation.List isRoot>
+                            <SideNavigation.Item href="#apples" title="Apples">
+                                <SideNavigation.List>
+                                    <SideNavigation.Item href="#green-apples" title="Green apples">
+                                        <SideNavigation.List>
+                                            <SideNavigation.Item href="#bramley" title="Bramley" current/>
+                                            <SideNavigation.Item href="#granny-smith" title="Granny smith"/>
+                                        </SideNavigation.List>
+                                    </SideNavigation.Item>
+                                    <SideNavigation.Item href="#red-apples" title="Red apples"/>
+                                </SideNavigation.List>
+                            </SideNavigation.Item>
+                            <SideNavigation.Item href="#bananas" title="Bananas" />
+                            <SideNavigation.Item href="#cherries" title="Cherries" />
+                            <SideNavigation.Item href="#dates" title="Dates"/>
+                        </SideNavigation.List>
+                    </SideNavigation>
                 </Example>
 
                 <Configuration componentName="Side navigation">
-                    <p>Side navigation components can use the following prop:</p>
+                    <p><code>SideNavigation</code> components can use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of side navigation item objects.</dd>
                     </dl>
                 </Configuration>
 
-                <Configuration componentName="Side navigation items">
-                    <p>Objects in the side navigation &lsquo;items&rsquo; array can use the following properties:</p>
+                <Configuration componentName="Side navigation list">
+                    <p><code>SideNavigation.List</code> components can use the following prop:</p>
+                    <dl>
+                        <dt><code>isRoot</code> (optional)</dt>
+                        <dd>Indicates that this is the root list in a nested structure. Required for mobile navigation.</dd>
+                    </dl>
+                    <p><code>SideNavigation.List</code> components can be children of <code>SideNavigation.Item</code> components to create a nested navigation structure.</p>
+                </Configuration>
+
+                <Configuration componentName="Side navigation item">
+                    <p><code>SideNavigation.Item</code> components can use the following props:</p>
                     <dl>
                         <dt><code>current</code> (optional)</dt>
                         <dd>Whether this is the current page. The current page uses a <code>span</code> element and is not a link. Boolean. Default is false.</dd>
                         <dt><code>href</code></dt>
                         <dd>The destination URL.</dd>
-                        <dt><code>items</code> (optional)</dt>
-                        <dd>Array of side navigation item objects, for a nested navigation structure.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                         <dt><code>title</code></dt>
                         <dd>Text to use for the link text.</dd>
+                    </dl>
+                </Configuration>
+
+                <h2 className="dsjsx_example-title" id="section-site-footer">Site footer</h2>
+
+                <Example>
+                    <SiteFooter>
+                        <SiteFooter.Links>
+                            <SiteFooter.Link href="#">Privacy</SiteFooter.Link>
+                            <SiteFooter.Link href="#">Cookies</SiteFooter.Link>
+                            <SiteFooter.Link href="#">Accessibility</SiteFooter.Link>
+                        </SiteFooter.Links>
+                        <SiteFooter.License>
+                            <img width="41" src="./ogl.svg" alt="Open Government License" />
+                            <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except for graphic assets and where otherwise stated</p>
+                            <p>&copy; Crown Copyright</p>
+                        </SiteFooter.License>
+                        <SiteFooter.Org title="The Scottish Government" href="https://www.gov.scot/">
+                            <img src="./scottish-government--min.svg" alt="gov.scot" loading="lazy" width="300" height="55" />
+                        </SiteFooter.Org>
+                    </SiteFooter>
+                </Example>
+
+                <Configuration componentName="Site footer">
+                    <p><code>SiteFooter</code> components can have <code>SiteFooter.Links</code>, <code>SiteFooter.Licensing</code> and <code>SiteFooter.Org</code> children. Site footer components can use the following property:</p>
+                    <dl>
+                        <dt><code>className</code> (optional)</dt>
+                        <dd>A CSS class name to pass to the component.</dd>
+                    </dl>
+                </Configuration>
+
+                <Configuration componentName="Site footer links">
+                    <p><code>SiteFooter.Links</code> components can have <code>SiteFooter.Link</code> children.</p>
+                    <p><code>SiteFooter.Link</code> components can have the following props:</p>
+                    <dl>
+                        <dt><code>href</code> (optional)</dt>
+                        <dd>The destination URL.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
+                    </dl>
+                </Configuration>
+
+                <Configuration componentName="Site footer licensing">
+                    <p>This is a basic container for copyright information, including any logo you might want to use.</p>
+                </Configuration>
+
+                <Configuration componentName="Site footer org">
+                    <p>This is a basic container for an org logo. If you want the org logo to be wraped in a link, use the following propserties:</p>
+                    <dl>
+                        <dt><code>href</code> (optional)</dt>
+                        <dd>The destination URL.</dd>
+                        <dt><code>title</code> (optional)</dt>
+                        <dd>Title attribute of the link.</dd>
                     </dl>
                 </Configuration>
 
                 <h2 className="dsjsx_example-title" id="section-site-header">Site header</h2>
 
                 <Example>
-                    <SiteHeader
-                        logo={{
-                            alt: 'The Scottish Government',
-                            src: './scottish-government.svg'
-                        }}
-                        navigationItems={[
-                            { title: 'About', href: '#about' },
-                            { title: 'Get started', href: '#get-started' },
-                            { title: 'Styles', href: '#styles' },
-                            { title: 'Components', href: '#components' },
-                            { title: 'Patterns', href: '#patterns' },
-                            { title: 'Guidance', href: '#guidance' },
-                        ]}
-                        phaseBanner={{
-                            phaseName: 'Beta'
-                        }}
-                        siteSearch
-                        siteTitle="Design System React"
-                        />
+                    <SiteHeader>
+                        <SiteHeader.Brand homeUrl="/" siteTitle="Design System React">
+                            <img src="./scottish-government.svg" alt="gov.scot" loading="lazy" width="300" height="58" />
+                        </SiteHeader.Brand>
+                        <SiteHeader.Navigation>
+                            <SiteNavigation>
+                                <SiteNavigation.Item href="#about">About</SiteNavigation.Item>
+                                <SiteNavigation.Item href="#get-started">Get started</SiteNavigation.Item>
+                                <SiteNavigation.Item href="#styles">Styles</SiteNavigation.Item>
+                                <SiteNavigation.Item href="#components" current>Components</SiteNavigation.Item>
+                                <SiteNavigation.Item href="#patterns">Patterns</SiteNavigation.Item>
+                                <SiteNavigation.Item href="#guidance">Guidance</SiteNavigation.Item>
+                            </SiteNavigation>
+                        </SiteHeader.Navigation>
+                        <SiteHeader.Search>
+                            <SiteSearch id="site-header-search"/>
+                        </SiteHeader.Search>
+                        <SiteHeader.Phase>
+                            <PhaseBanner phaseName="Beta">
+                                This is a new service. Your <a href="#feedback">feedback</a> will help us to improve it.
+                            </PhaseBanner>
+                        </SiteHeader.Phase>
+                    </SiteHeader>
                 </Example>
 
                 <Configuration componentName="Site header">
-                    <p>Site header components can use the following props:</p>
+                    <p><code>SiteHeader</code> uses basic subcomponents as slots for its content.</p>
+                    <ul>
+                        <li><code>SiteHeader.Navigation</code> expects a <code>SiteNavigation</code> component or equivalent</li>
+                        <li><code>SiteHeader.Phase</code> expects a <code>PhaseBanner</code> component or equivalent</li>
+                        <li><code>SiteHeader.Search</code> expects a <code>SiteSearch</code> component or equivalent</li>
+                        <li><code>SiteHeader.Brand</code> is a special case, described separately below</li>
+                    </ul>
+                </Configuration>
+
+                <Configuration componentName="Site header brand">
+                    <p><code>SiteHeader.Brand</code> should have an image child for use as the site logo. <code>SiteHeader.Brand</code> components can use the following props:</p>
                     <dl>
-                        <dt><code>className</code> (optional)</dt>
-                        <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>logo</code></dt>
-                        <dd>An object containing logo information. Properties are:
-                            <ul>
-                                <li><code>alt</code>: alt attribute of the logo image</li>
-                                <li><code>href</code>: link href attribute (optional, defaults to '/')</li>
-                                <li><code>src</code>: image source</li>
-                            </ul>
-                        </dd>
-                        <dt><code>navigationItems</code> (optional)</dt>
-                        <dd>Array of site navigation item objects. See <a href="#section-site-navigation">site navigation</a> for more detail.</dd>
-                        <dt><code>phaseBanner</code> (optional)</dt>
-                        <dd>Configuration for a phase banner component. See <a href="#section-phase-banner">phase banner</a> for more detail.</dd>
-                        <dt><code>siteSearch</code> (optional)</dt>
-                        <dd>Configuration for a site search component. See <a href="#section-site-search">site search</a> for more detail.</dd>
+                        <dt><code>homeUrl</code></dt>
+                        <dd>The URL of the home page. Default is <code>/</code>.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                         <dt><code>siteTitle</code> (optional)</dt>
                         <dd>Text to use in the site title.</dd>
                     </dl>
@@ -1407,35 +1295,33 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-site-navigation">Site navigation</h2>
 
                 <Example>
-                    <SiteNavigation items={[
-                        {title: 'About', href: '#about'},
-                        {title: 'Get started', href: '#get-started'},
-                        {title: 'Styles', href: '#styles'},
-                        {title: 'Components', href: '#components', current: true},
-                        {title: 'Patterns', href: '#patterns'},
-                        {title: 'Guidance', href: '#guidance'},
-                    ]}/>
+                   <SiteNavigation>
+                        <SiteNavigation.Item href="#about">About</SiteNavigation.Item>
+                        <SiteNavigation.Item href="#get-started">Get started</SiteNavigation.Item>
+                        <SiteNavigation.Item href="#styles">Styles</SiteNavigation.Item>
+                        <SiteNavigation.Item href="#components" current>Components</SiteNavigation.Item>
+                        <SiteNavigation.Item href="#patterns">Patterns</SiteNavigation.Item>
+                        <SiteNavigation.Item href="#guidance">Guidance</SiteNavigation.Item>
+                    </SiteNavigation>
                 </Example>
 
                 <Configuration componentName="Site navigation">
-                    <p>Site navigation components can use the following props:</p>
+                    <p><code>SiteNavigation</code> components can use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of site navigation item objects.</dd>
                     </dl>
                 </Configuration>
 
                 <Configuration componentName="Site navigation items">
-                    <p>Objects in the site navigation &lsquo;items&rsquo; array can use the following properties:</p>
+                    <p><code>SiteNavigation.Item</code> components array can use the following props:</p>
                     <dl>
                         <dt><code>current</code> (optional)</dt>
                         <dd>Whether this is the current page. Boolean. Default is false.</dd>
                         <dt><code>href</code></dt>
                         <dd>The destination URL.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text to use for the link text.</dd>
+                        <dt><code>linkComponent</code> (optional)</dt>
+                        <dd>Function that returns an element, to customise the output.</dd>
                     </dl>
                 </Configuration>
 
@@ -1449,7 +1335,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Site search">
-                    <p>Site search can use the following props:</p>
+                    <p><code>SiteSearch</code> components can use the following props:</p>
                     <dl>
                         <dt><code>action</code> (optional)</dt>
                         <dd>The value of the search form&apos;s <code>action</code> atttribute. Default is <code>/search</code>.</dd>
@@ -1481,16 +1367,17 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-skip-links">Skip links</h2>
 
                 <Example nodisplay>
-                    <SkipLinks mainContentId="baz" items={[
-                        {title: 'bar', targetId: 'foo'}
-                    ]}/>
+                    <SkipLinks>
+                        <SkipLinks.Link fragmentId="main-content">Skip to main content</SkipLinks.Link>
+                    </SkipLinks>
                 </Example>
 
                 <Configuration componentName="Skip links">
-                    <p>Skip links always contain a link to the main content of a page. You can include additional links in the <code>items</code> prop. Skip links components can use the following props:</p>
+                    <p>If a <code>SkipLinks</code> has no children, it will insert a default <code>SkipLinks.Link</code> component, whose text and target element can be customised through the <code>mainContentId</code> and <code>mainLinkText</code> props.</p>
+                    <p><code>SkipLinks</code> components can use the following props:</p>
                     <dl>
-                        <dt><code>items</code> (optional)</dt>
-                        <dd>Array of additional skip link items if you need to add more than just &lsquo;main content&rsquo;.</dd>
+                        <dt><code>isStatic</code> (optional)</dt>
+                        <dd>Use the 'static' display variant, which makes the skip links use screen real estate when focused instead of being absolutely positioned.</dd>
                         <dt><code>mainContentId</code> (optional)</dt>
                         <dd>The <code>id</code> attribute of the &lsquo;main content&rsquo; element to link to. Default is <code>main-content</code>.</dd>
                         <dt><code>mainLinkText</code> (optional)</dt>
@@ -1499,135 +1386,99 @@ export default function Home() {
                 </Configuration>
 
                 <Configuration componentName="Skip link items">
-                    <p>Objects in the skip links items array use the following properties:</p>
+                    <p><code>SkipLinks.Link</code> components use the following prop:</p>
                     <dl>
-                        <dt><code>targetId</code></dt>
+                        <dt><code>fragmentId</code></dt>
                         <dd>ID of the destination element.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text to use for the link text.</dd>
                     </dl>
                 </Configuration>
 
                 <h2 className="dsjsx_example-title" id="section-summary-card">Summary card</h2>
 
                 <Example>
-                    <SummaryCard
-                        title="Joe Bloggs"
-                        actions={[
-                            {
-                                title: 'Change',
-                                href: '#foo'
-                            },
-                            {
-                                title: 'Delete',
-                                onclick: () => { console.log('delete clicked') }
-                            }
-                            ]}
-                        items={[
-                            {
-                                title: 'Phone number',
-                                value: '0123 456 7890'
-                            },
-                            {
-                                title: 'Address',
-                                value: `Victoria Quay\nEdinburgh\nEH6 6QQ`,
-                            }
-                        ]}
-                    />
+                    <SummaryCard title="Joe Bloggs">
+                        <SummaryCard.Action href="#foo">Change</SummaryCard.Action>
+                        <SummaryCard.Action onclick={() => console.log('delete clicked')}>Delete</SummaryCard.Action>
+                        <SummaryList>
+                            <SummaryList.Item title="Phone number">
+                                <SummaryList.Value>0123 456 7890</SummaryList.Value>
+                            </SummaryList.Item>
+
+                            <SummaryList.Item title="Address">
+                                <SummaryList.Value>
+                                    Victoria Quay<br />Edinburgh<br />EH6 6QQ
+                                </SummaryList.Value>
+                            </SummaryList.Item>
+                        </SummaryList>
+                    </SummaryCard>
+
                 </Example>
 
                 <Configuration componentName="Summary card">
-                    <p>Summary card components can use the following props:</p>
+                    <p><code>SummaryCard</code> components can use the following props:</p>
                     <dl>
-                        <dt><code>actions</code> (optional)</dt>
-                        <dd>Array of summary card actions data.</dd>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
                         <dt><code>headingLevel</code> (optional)</dt>
                         <dd>Heading level to use for the summary card title. Default is <code>H3</code>.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of summary list item data. Refer to the <a href="#summary-list-items">summary list items documentation</a>.</dd>
                         <dt><code>title</code></dt>
                         <dd>The title of the summary card.</dd>
                     </dl>
                 </Configuration>
 
                 <Configuration componentName="Summary card actions">
-                    <p>Objects in the summary card actions array can have the following properties:</p>
+                    <p><code>SummaryCard.Action</code> components can have the following prop:</p>
                     <dl>
                         <dt><code>href</code> (optional)</dt>
-                        <dd>The destination URL.</dd>
+                        <dd>The destination URL. The action will be a button element if this is omitted.</dd>
                         <dt><code>onclick</code> (optional)</dt>
                         <dd>Function to fire in response to a click event.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text label of the summary card action.</dd>
                     </dl>
                 </Configuration>
 
                 <h2 className="dsjsx_example-title" id="section-summary-list">Summary list</h2>
 
                 <Example>
-                    <SummaryList
-                        items={[
-                            {
-                                title: 'Name',
-                                value: 'Jane Smith',
-                                actions: [
-                                    {
-                                        title: 'Change',
-                                        href: '#foo'
-                                    },
-                                    {
-                                        title: 'Delete',
-                                        onclick: () => { console.log('delete clicked') }
-                                    }
-                                ]
-                            },
-                            {
-                                title: 'Date of birth',
-                                value: '13 April 2001',
-                                actions: [
-                                    {
-                                        title: 'Change',
-                                        href: '#bar'
-                                    }
-                                ]
-                            },
-                            {
-                                title: 'Address',
-                                value: `Scottish Government\nSt Andrew's House\nRegent Road\nEdinburgh\nEH1 3DG`,
-                                actions: [
-                                    {
-                                        title: 'Change',
-                                        href: '#baz'
-                                    }
-                                ]
-                            },
-                            {
-                                title: 'Contact details',
-                                value: [
-                                    'email@gov.scot',
-                                    '0123 456 7890',
-                                ]
-                            }
-                        ]}
-                    />
+                    <SummaryList>
+                        <SummaryList.Item title="Name">
+                            <SummaryList.Value>Jane Smith</SummaryList.Value>
+                            <SummaryList.Action href="#foo">Change</SummaryList.Action>
+                            <SummaryList.Action onclick={() => console.log('delete clicked')}>Delete</SummaryList.Action>
+                        </SummaryList.Item>
+
+                        <SummaryList.Item title="Date of birth">
+                            <SummaryList.Value>13 April 2001</SummaryList.Value>
+                            <SummaryList.Action href="#bar">Change</SummaryList.Action>
+                        </SummaryList.Item>
+
+                        <SummaryList.Item title="Address">
+                            <SummaryList.Value>
+                                Scottish Government<br />St Andrew's House<br />Regent Road<br />Edinburgh<br />EH1 3DG
+                            </SummaryList.Value>
+                            <SummaryList.Action href="#baz">Change</SummaryList.Action>
+                        </SummaryList.Item>
+
+                        <SummaryList.Item title="Contact details">
+                            <SummaryList.Value>email@gov.scot</SummaryList.Value>
+                            <SummaryList.Value>0123 456 7890</SummaryList.Value>
+                            <SummaryList.Action href="foo">Change</SummaryList.Action>
+                            <SummaryList.Action onclick={() => console.log('delete clicked')}>Delete</SummaryList.Action>
+                        </SummaryList.Item>
+                    </SummaryList>
                 </Example>
 
                 <Configuration componentName="Summary list">
-                    <p>Summary list components can use the following props:</p>
+                    <p><code>SummaryList</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>items</code></dt>
-                        <dd>Array of summary list item data.</dd>
                         <dt><code>noBorder</code> (optional)</dt>
                         <dd>Use the borderless display variant. Boolean.</dd>
                     </dl>
                 </Configuration>
 
                 <Configuration componentName="Summary list items" id="summary-list-items">
-                    <p>Objects in the summary list items array can have the following properties:</p>
+                    <p><code>SummaryList.Item</code> components can have the following prop:</p>
                     <dl>
                         <dt><code>actions</code> (optional)</dt>
                         <dd>Array of summary item actions data.</dd>
@@ -1638,15 +1489,13 @@ export default function Home() {
                     </dl>
                 </Configuration>
 
-                <Configuration componentName="Summary list item actions">
-                    <p>Objects in the summary list item actions array can have the following properties:</p>
+                <Configuration componentName="Summary list actions">
+                    <p><code>SummaryList.Action</code> components can have the following prop:</p>
                     <dl>
                         <dt><code>href</code> (optional)</dt>
-                        <dd>The destination URL.</dd>
+                        <dd>The destination URL. The action will be a button element if this is omitted.</dd>
                         <dt><code>onclick</code> (optional)</dt>
                         <dd>Function to fire in response to a click event.</dd>
-                        <dt><code>title</code></dt>
-                        <dd>Text label of the summary list action.</dd>
                     </dl>
                 </Configuration>
 
@@ -1688,8 +1537,8 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Table">
-                    <p>The table component is a basic wrapper around standard table elements that adds the Design System's <code>ds_table</code> CSS class and a prop for specifying table behaviour on small screens.</p>
-                    <p>Table components can use the following props:</p>
+                    <p>The <code>Table</code> component is a basic wrapper around standard table elements that adds the Design System's <code>ds_table</code> CSS class and a prop for specifying table behaviour on small screens.</p>
+                    <p><code>Table</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1730,7 +1579,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Tabs">
-                    <p>Tab components can use the following props:</p>
+                    <p><code>Tab</code> components can use the following props:</p>
                     <dl>
                         <dt><code>baseId</code></dt>
                         <dd>A string that IDs for subcomponents are derived from.</dd>
@@ -1748,7 +1597,7 @@ export default function Home() {
                 </Configuration>
 
                 <Configuration componentName="Tab items">
-                    <p>Tab item components can use the following props:</p>
+                    <p><code>Tabs.Item</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1762,15 +1611,15 @@ export default function Home() {
                 <h2 className="dsjsx_example-title" id="section-tag">Tag</h2>
 
                 <Example>
-                    <Tag title="Beta"/>
+                    <Tag>Beta</Tag>
                 </Example>
 
                 <Example>
-                    <Tag colour="green" title="Completed"/>
+                    <Tag colour="green">Completed</Tag>
                 </Example>
 
                 <Configuration componentName="Tag">
-                    <p>Tag components can use the following props:</p>
+                    <p><code>Tag</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1898,7 +1747,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Task list">
-                    <p>TaskList components can have either <code>TaskList.Item</code> or <code>TaskList.Group</code> children. Task list components can use the following prop:</p>
+                    <p><code>TaskList</code> components can have either <code>TaskList.Item</code> or <code>TaskList.Group</code> children. Task list components can use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1910,7 +1759,7 @@ export default function Home() {
                 </Configuration>
 
                 <Configuration componentName="Task list item">
-                    <p>Task list item components can use the following props:</p>
+                    <p><code>TaskList.Item</code> item components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1932,7 +1781,7 @@ export default function Home() {
                 </Configuration>
 
                 <Configuration componentName="Task group">
-                    <p>Task list group components can use the following props:</p>
+                    <p><code>TaskList.Group</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
@@ -1991,14 +1840,14 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Text input">
-                    <p>Text input components can use the following props:</p>
+                    <p><code>TextInput</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>error</code> (optional)</dt>
-                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>errorMessage</code> (optional)</dt>
                         <dd>Text to use for an error message.</dd>
+                        <dt><code>hasError</code> (optional)</dt>
+                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>hintText</code> (optional)</dt>
                         <dd>Text to use for a text input&apos;s hint text.</dd>
                         <dt><code>id</code></dt>
@@ -2088,14 +1937,14 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Textarea">
-                    <p>Textarea components can use the following props:</p>
+                    <p><code>Textarea</code> components can use the following props:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
-                        <dt><code>error</code> (optional)</dt>
-                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>errorMessage</code> (optional)</dt>
                         <dd>Text to use for an error message.</dd>
+                        <dt><code>hasError</code> (optional)</dt>
+                        <dd>Whether the field is in an error state. Boolean.</dd>
                         <dt><code>hintText</code> (optional)</dt>
                         <dd>Text to use for a textarea&apos;s hint text.</dd>
                         <dt><code>id</code></dt>
@@ -2136,7 +1985,7 @@ export default function Home() {
                 </Example>
 
                 <Configuration componentName="Warning text">
-                    <p>Warning text can have use the following prop:</p>
+                    <p><code>WarningText</code> can have use the following prop:</p>
                     <dl>
                         <dt><code>className</code> (optional)</dt>
                         <dd>A CSS class name to pass to the component.</dd>
