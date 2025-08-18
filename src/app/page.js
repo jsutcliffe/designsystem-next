@@ -80,7 +80,7 @@ import TaskList from '@scottish-government/designsystem-react/dist/components/Ta
 
 import Configuration from './components/configuration';
 import Example from './components/example';
-import lastUpdated from './lastUpdated';
+import metadata from './metadata';
 
 const suggestionMappingFunction = function (suggestionsObj) {
     const responseObj = JSON.parse(suggestionsObj.response).map(suggestionsObj => ({
@@ -104,7 +104,8 @@ export default function Home() {
                     title="Design System React components"
                 >
                     <Metadata>
-                        <Metadata.Item name="Last updated">{lastUpdated}</Metadata.Item>
+                        <Metadata.Item name="Last updated">{metadata.lastUpdated}</Metadata.Item>
+                        <Metadata.Item name="Package version"><a href={metadata.package.url}>{metadata.package.version}</a></Metadata.Item>
                     </Metadata>
                 </PageHeader>
 

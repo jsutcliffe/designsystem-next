@@ -9,8 +9,8 @@
   },
   "private": true,
   "scripts": {
-    "dev": "node ./setLastUpdated && next dev",
-    "build": "node ./setLastUpdated && next build",
+    "dev": "node ./setMetadata && next dev",
+    "build": "node ./setMetadata && next build",
     "start": "next start",
     "lint": "next lint"
   },

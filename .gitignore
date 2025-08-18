@@ -1,3 +1,4 @@
 .next/
 node_modules/
 lastUpdated.js
+metadata.js
