@@ -13,4 +13,4 @@ const metadata = {
     }
 }
 
-fs.writeFileSync('src/app/metadata.js', `export default ${JSON.stringify(metadata)};`);
+fs.writeFileSync('app/metadata.js', `const metadata = ${JSON.stringify(metadata)};export default metadata;`);

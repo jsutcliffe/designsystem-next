@@ -9,22 +9,28 @@
   },
   "private": true,
   "scripts": {
-    "dev": "node ./setMetadata && next dev",
-    "build": "node ./setMetadata && next build",
+    "dev": "node ./setMetadata && next dev --turbopack",
+    "devNoTurbo": "node ./setMetadata && next dev",
+    "build": "node ./setMetadata && next build --turbopack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "dependencies": {
-    "@scottish-government/design-system": "^3.0.2",
-    "next": "^15.2.3",
-    "prismjs": "^1.29.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@scottish-government/design-system": "^3.2.0",
+    "next": "15.5.0",
+    "prismjs": "^1.30.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@scottish-government/designsystem-react": "^0.8.0",
-    "eslint": "^8",
-    "eslint-config-next": "^14.2.5",
-    "react-element-to-jsx-string": "^17.0.0"
+    "@eslint/eslintrc": "^3",
+    "@scottish-government/designsystem-react": "^0.9.0-beta.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.0",
+    "react-element-to-jsx-string": "^17.0.1",
+    "typescript": "^5"
   }
 }

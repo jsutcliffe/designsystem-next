@@ -1,0 +1,107 @@
+pre > code {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+}
+
+.dsjsx_example {
+    border: 1px solid #b3b3b3;
+    /* padding: 1rem; */
+}
+
+code:not([class*=language-]) {
+    color: #d32205;
+    font-family: monospace;
+}
+
+
+
+
+.ds_layout--pl-component {
+    grid-template-areas:
+        'h h'
+        's s'
+        'c c'
+        'f f';
+}
+
+@media (min-width:480px) {
+        .ds_layout--pl-component {
+            grid-template-areas:
+                'h h h h h h'
+                's s s s s s'
+                'c c c c c c'
+                'f f f f f f';
+        }
+    }
+
+@media (min-width: 768px){
+    .ds_layout--pl-component {
+        grid-template-areas:
+            's s s h h h h h h h h h'
+            's s s c c c c c c c c c'
+            '. . . f f f f f f f f f';
+    }
+}
+
+@media (min-width: 992px) {
+    .ds_layout--pl-component {
+        grid-template-areas:
+            's s s h h h h h h h . .'
+            's s s c c c c c c c . .'
+            '. . . f f f f f f f . .';
+    }
+}
+
+@media(min-width: 768px) {
+    .overflow--medium--1 {
+        margin-right:-66.6666666667px
+    }
+
+    .overflow--medium--2 {
+        margin-right: -133.3333333333px
+    }
+
+    .overflow--medium--3 {
+        margin-right: -200px
+    }
+
+    .overflow--medium--4 {
+        margin-right: -266.6666666667px
+    }
+}
+
+@media(min-width: 992px) {
+    .overflow--large--1 {
+        margin-right:-80px
+    }
+
+    .overflow--large--2 {
+        margin-right: -160px
+    }
+
+    .overflow--large--3 {
+        margin-right: -240px
+    }
+
+    .overflow--large--4 {
+        margin-right: -320px
+    }
+}
+
+@media(min-width: 1200px) {
+    .overflow--xlarge--1 {
+        margin-right:-96px
+    }
+
+    .overflow--xlarge--2 {
+        margin-right: -192px
+    }
+
+    .overflow--xlarge--3 {
+        margin-right: -288px
+    }
+
+    .overflow--xlarge--4 {
+        margin-right: -384px
+    }
+}
