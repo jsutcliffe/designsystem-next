@@ -68,7 +68,7 @@ export default function Page() {
                 <p>Use these additional props for a text input with an associated button:</p>
                 <dl>
                     <dt><code>buttonIcon</code></dt>
-                    <dd>Name of the icon to use from the icon stack.</dd>
+                    <dd>Name of the icon to use.</dd>
                     <dt><code>buttonText</code></dt>
                     <dd>Text content for the button (for screen readers).</dd>
                     <dt><code>hasButton</code></dt>
@@ -89,10 +89,10 @@ export default function Page() {
             <Configuration componentName="Currency input">
                 <p>Use these additional props for a currency text input:</p>
                 <dl>
-                    <dt><code>currency</code></dt>
-                    <dd>Whether the component is a currency field. Boolean.</dd>
                     <dt><code>currencySymbol</code> (optional)</dt>
                     <dd>Currency symbol to use. Default is <code>£</code>.</dd>
+                    <dt><code>isCurrency</code></dt>
+                    <dd>Whether the component is a currency field. Boolean.</dd>
                 </dl>
             </Configuration>
         </div>

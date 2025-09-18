@@ -15,7 +15,7 @@ export default function Page() {
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>noBorder</code> (optional)</dt>
+                    <dt><code>isBorderless</code> (optional)</dt>
                     <dd>Use the borderless display variant. Boolean.</dd>
                 </dl>
             </Configuration>

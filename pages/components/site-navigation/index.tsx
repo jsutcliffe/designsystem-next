@@ -21,10 +21,10 @@ export default function Page() {
             <Configuration componentName="Site navigation items">
                 <p><code>SiteNavigation.Item</code> components array can use the following props:</p>
                 <dl>
-                    <dt><code>current</code> (optional)</dt>
-                    <dd>Whether this is the current page. Boolean. Default is false.</dd>
                     <dt><code>href</code></dt>
                     <dd>The destination URL.</dd>
+                    <dt><code>isCurrent</code> (optional)</dt>
+                    <dd>Whether this is the current page. Boolean. Default is false.</dd>
                     <dt><code>linkComponent</code> (optional)</dt>
                     <dd>Function that returns an element, to customise the output.</dd>
                 </dl>

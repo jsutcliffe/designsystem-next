@@ -17,14 +17,14 @@ export default function Page() {
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>close</code> (optional)</dt>
-                    <dd>Shows the &lsquo;close&rsquo; button on the notification banner. Boolean.</dd>
                     <dt><code>hasColourIcon</code> (optional)</dt>
                     <dd>Makes the icon display in the alternative colour scheme (yellow). Boolean.</dd>
                     <dt><code>hasInverseIcon</code> (optional)</dt>
                     <dd>Makes the icon be inverted against a circle background. Boolean.</dd>
                     <dt><code>icon</code> (optional)</dt>
                     <dd>Shows the &lsquo;high priority&rsquo; icon on the notification banner. Boolean.</dd>
+                    <dt><code>isDismissable</code> (optional)</dt>
+                    <dd>Shows the &lsquo;close&rsquo; button on the notification banner. Boolean.</dd>
                     <dt><code>title</code> (optional)</dt>
                     <dd>A hidden title for the notification banner, useful for screen reader users. Default is &lsquo;Information&rsquo;.</dd>
                 </dl>

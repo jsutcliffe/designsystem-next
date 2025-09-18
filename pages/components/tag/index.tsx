@@ -31,8 +31,6 @@ export default function Page() {
                             <li><code>yellow</code></li>
                         </ul>
                     </dd>
-                    <dt><code>title</code></dt>
-                    <dd>The text content of the tag.</dd>
                 </dl>
             </Configuration>
         </div>

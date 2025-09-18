@@ -4,7 +4,7 @@ import TextInput from '@scottish-government/designsystem-react/dist/components/T
 import ExampleLayout from '../../../app/example-layout';
 
 export const Content = <TextInput
-    currency
+    isCurrency
     id="text-input-currency"
     label="Price per month"
     width="fluid-one-third"

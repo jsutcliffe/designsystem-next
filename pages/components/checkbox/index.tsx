@@ -15,7 +15,7 @@ export default function Page() {
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>small</code> (optional)</dt>
+                    <dt><code>isSmall</code> (optional)</dt>
                     <dd>Whether to use the &lsquo;small&rsquo; radio button variant. Boolean.</dd>
                 </dl>
             </Configuration>
@@ -29,8 +29,10 @@ export default function Page() {
                     <dd>Text to use for a checkbox&apos;s hint text.</dd>
                     <dt><code>id</code></dt>
                     <dd>Value to use for the checkbox&apos;s <code>id</code> attribute.</dd>
-                    <dt><code>exclusive</code> (optional)</dt>
+                    <dt><code>isExclusive</code> (optional)</dt>
                     <dd>Whether this checkbox is an an exclusive checkbox (a &lsquo;none&rsquo; option). Boolean.</dd>
+                    <dt><code>isSmall</code> (optional)</dt>
+                    <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean. Alternatively you can set this on an ancestor <code>CheckboxGroup</code> component.</dd>
                     <dt><code>label</code></dt>
                     <dd>Text to use for the checkbox&apos;s associated label.</dd>
                     <dt><code>name</code> (optional)</dt>
@@ -39,8 +41,6 @@ export default function Page() {
                     <dd>Function to fire in response to a blur event.</dd>
                     <dt><code>onChange</code> (optional)</dt>
                     <dd>Function to fire in response to a change event.</dd>
-                    <dt><code>small</code> (optional)</dt>
-                    <dd>Whether to use the &lsquo;small&rsquo; checkbox variant. Boolean. Alternatively you can set this on an ancestor <code>CheckboxGroup</code> component.</dd>
                 </dl>
             </Configuration>
         </div>

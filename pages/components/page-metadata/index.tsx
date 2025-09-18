@@ -17,7 +17,7 @@ export default function Page() {
                 <dl>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>inline</code> (optional)</dt>
+                    <dt><code>isInline</code> (optional)</dt>
                     <dd>Makes the page metadata use the truncated &lsquo;inline&rsquo; display. Boolean.</dd>
                 </dl>
             </Configuration>
@@ -25,7 +25,7 @@ export default function Page() {
                 <p><code>Metadata</code> components can have any number of <code>Metadata.Item</code> children. Metadata item components can use the following props:</p>
                 <dl>
                     <dt><code>name</code></dt>
-                    <dd>The name or key of the metadata item. Boolean.</dd>
+                    <dd>The name or key of the metadata item.</dd>
                 </dl>
                 <p>The value of the metadata item is provided by its children.</p>
             </Configuration>

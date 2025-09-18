@@ -9,7 +9,7 @@ export const Content = <SideNavigation>
             <SideNavigation.List>
                 <SideNavigation.Item href="#green-apples" title="Green apples">
                     <SideNavigation.List>
-                        <SideNavigation.Item href="#bramley" title="Bramley" current/>
+                        <SideNavigation.Item href="#bramley" title="Bramley" isCurrent/>
                         <SideNavigation.Item href="#granny-smith" title="Granny smith"/>
                     </SideNavigation.List>
                 </SideNavigation.Item>

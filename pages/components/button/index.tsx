@@ -28,18 +28,18 @@ export default function Page() {
                     </dd>
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
-                    <dt><code>icon</code> (optional)</dt>
-                    <dd>Name of the icon to use from the icon stack.</dd>
-                    <dt><code>iconLeft</code> (optional)</dt>
-                    <dd>Whether a button&apos;s icon is aligned to the left (default is aligned to the right). Boolean.</dd>
-                    <dt><code>iconOnly</code> (optional)</dt>
-                    <dd>Whether this is an &lsquo;icon only&rsquo; button. This will make the button&apos;s text (its child) be visually hidden but available to screen readers. Boolean, default is <code>false</code>.</dd>
+                    <dt><code>hasLinkStyle</code> (optional)</dt>
+                    <dd>Whether to make the button look like a link. Boolean.</dd>
                     <dt><code>href</code> (optional)</dt>
                     <dd><code>href</code> attribute to use on the button. If a href is specified, the button will use the HTML <code>a</code> element.</dd>
-                    <dt><code>small</code> (optional)</dt>
+                    <dt><code>icon</code> (optional)</dt>
+                    <dd>Name of the icon to use.</dd>
+                    <dt><code>isIconLeft</code> (optional)</dt>
+                    <dd>Whether a button&apos;s icon is aligned to the left (default is aligned to the right). Boolean.</dd>
+                    <dt><code>isIconOnly</code> (optional)</dt>
+                    <dd>Whether this is an &lsquo;icon only&rsquo; button. This will make the button&apos;s text (its child) be visually hidden but available to screen readers. Boolean, default is <code>false</code>.</dd>
+                    <dt><code>isSmall</code> (optional)</dt>
                     <dd>Whether to use the &lsquo;small&rsquo; variant of a button. Boolean.</dd>
-                    <dt><code>styleAsLink</code> (optional)</dt>
-                    <dd>Whether to make the button look like a link. Boolean.</dd>
                     <dt><code>type</code> (optional)</dt>
                     <dd>The value for the <code>type</code> attribute of the button. Default is <code>button</code> but sometimes <code>submit</code> might be more appropriate.</dd>
                     <dt><code>width</code> (optional)</dt>

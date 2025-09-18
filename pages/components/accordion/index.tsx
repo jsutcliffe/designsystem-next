@@ -31,7 +31,7 @@ export default function Page() {
                     <dd>Heading level to use for the accordion item&apos;s title. It is better to let the parent set this for all of its accordion items.</dd>
                     <dt><code>id</code></dt>
                     <dd>ID to use for the accordion item if you want to override the automatically generated default for any reason.</dd>
-                    <dt><code>open</code> (optional)</dt>
+                    <dt><code>isOpen</code> (optional)</dt>
                     <dd>Makes the accordion item display in an open state on page load.</dd>
                 </dl>
             </Configuration>

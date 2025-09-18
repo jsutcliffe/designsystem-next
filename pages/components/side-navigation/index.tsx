@@ -30,10 +30,10 @@ export default function Page() {
             <Configuration componentName="Side navigation item">
                 <p><code>SideNavigation.Item</code> components can use the following props:</p>
                 <dl>
-                    <dt><code>current</code> (optional)</dt>
-                    <dd>Whether this is the current page. The current page uses a <code>span</code> element and is not a link. Boolean. Default is false.</dd>
                     <dt><code>href</code></dt>
                     <dd>The destination URL.</dd>
+                    <dt><code>isCurrent</code> (optional)</dt>
+                    <dd>Whether this is the current page. The current page uses a <code>span</code> element and is not a link. Boolean.</dd>
                     <dt><code>linkComponent</code> (optional)</dt>
                     <dd>Function that returns an element, to customise the output.</dd>
                     <dt><code>title</code></dt>

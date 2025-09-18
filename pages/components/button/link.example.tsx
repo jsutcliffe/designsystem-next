@@ -5,7 +5,7 @@ import ExampleLayout from '../../../app/example-layout';
 
 export const Content = <>
     <Button href="#bananas">Link styled as button</Button><br />
-    <Button styleAsLink>Button styled as link</Button>
+    <Button hasLinkStyle>Button styled as link</Button>
 </>;
 
 export default function Page() {

@@ -22,7 +22,6 @@ const suggestionMappingFunction = function (request: XMLHttpRequest) {
     }));
     const siteSearchElement = document.getElementById('site-search') as HTMLInputElement;
     const filteredResults = responseObj.filter((item: AutocompleteResponseObject) => (item.displayText.toLowerCase().indexOf(siteSearchElement.value.toLowerCase()) > -1));
-console.log(responseObj,filteredResults)
     return filteredResults.slice(0,6);
 }
 

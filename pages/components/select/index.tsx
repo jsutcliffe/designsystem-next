@@ -33,8 +33,6 @@ export default function Page() {
                     <dd>Function to fire in response to a blur event.</dd>
                     <dt><code>onChange</code> (optional)</dt>
                     <dd>Function to fire in response to a change event.</dd>
-                    <dt><code>options</code></dt>
-                    <dd>Array of option items.</dd>
                     <dt><code>placeholder</code> (optional)</dt>
                     <dd>Text to use for an optional unselected first option.</dd>
                     <dt><code>width</code> (optional)</dt>

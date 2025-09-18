@@ -17,16 +17,16 @@ export default function Page() {
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>cover</code> (optional)</dt>
                     <dd>URL of a custom cover image.</dd>
-                    <dt><code>highlighted</code> (optional)</dt>
-                    <dd>Add a highlight to the file download. Boolean. Default is <code>false</code>.</dd>
-                    <dt><code>icon</code> (optional)</dt>
-                    <dd>Canned icon to use.</dd>
                     <dt><code>fileSize</code> (optional)</dt>
                     <dd>Description of the file size.</dd>
                     <dt><code>fileType</code> (optional)</dt>
                     <dd>A description of the file type.</dd>
                     <dt><code>fileUrl</code></dt>
                     <dd>The URL of the file to download.</dd>
+                    <dt><code>icon</code> (optional)</dt>
+                    <dd>Canned icon to use.</dd>
+                    <dt><code>isHighlighted</code> (optional)</dt>
+                    <dd>Add a highlight to the file download. Boolean. Default is <code>false</code>.</dd>
                     <dt><code>title</code></dt>
                     <dd>The document title, used in the link text.</dd>
                 </dl>

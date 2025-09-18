@@ -29,16 +29,14 @@ export default function Page() {
                     <dd>Text to use for a date picker hint text.</dd>
                     <dt><code>id</code></dt>
                     <dd>Value to use for the <code>id</code> attribute of the date picker&apos;s <code>input</code> element. If the date picker is using multiple inputs, each field starts with the ID. For example, <code>myId-day</code>, <code>myId-month</code>, <code>myId-year</code>.</dd>
-                    <dt><code>iconPath</code> (optional)</dt>
-                    <dd>Path to the icon file.</dd>
+                    <dt><code>isMultiple</code> (optional)</dt>
+                    <dd>Whether to display the day, month and year as separate fields. Boolean.</dd>
                     <dt><code>label</code></dt>
                     <dd>Text to use for the date picker&apos;s associated label.</dd>
                     <dt><code>maxDate</code> (optional)</dt>
                     <dd>Latest selectable date in the date picker. Uses the format <code>dd/mm/yyyy</code>.</dd>
                     <dt><code>minDate</code> (optional)</dt>
                     <dd>Earliest selectable date in the date picker. Uses the format <code>dd/mm/yyyy</code>.</dd>
-                    <dt><code>multiple</code> (optional)</dt>
-                    <dd>Whether to display the day, month and year as separate fields. Boolean.</dd>
                     <dt><code>name</code> (optional)</dt>
                     <dd>Value to use for the <code>name</code> attribute of the date picker. The behaviour of this on date pickers with multiple input fields is the same as the behaviour of the <code>id</code> prop.</dd>
                     <dt><code>onBlur</code> (optional)</dt>

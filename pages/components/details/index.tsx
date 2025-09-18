@@ -16,7 +16,7 @@ export default function Page() {
                     <dt><code>className</code> (optional)</dt>
                     <dd>A CSS class name to pass to the component.</dd>
                     <dt><code>summary</code></dt>
-                    <dd>Text to use for the details componen&apos;s &lsquo;summary&rsquo; element.</dd>
+                    <dd>Text to use for the details component&apos;s &lsquo;summary&rsquo; element.</dd>
                 </dl>
             </Configuration>
         </div>

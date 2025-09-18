@@ -3,7 +3,7 @@ import Metadata from '@scottish-government/designsystem-react/dist/components/Pa
 
 import ExampleLayout from '../../../app/example-layout';
 
-export const Content = <Metadata inline>
+export const Content = <Metadata isInline>
     <Metadata.Item name="Content type">Publication</Metadata.Item>
     <Metadata.Item name="Last updated">21/04/2020</Metadata.Item>
 </Metadata>;

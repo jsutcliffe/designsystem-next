@@ -7,7 +7,7 @@ export const Content = <SiteNavigation>
     <SiteNavigation.Item href="#about">About</SiteNavigation.Item>
     <SiteNavigation.Item href="#get-started">Get started</SiteNavigation.Item>
     <SiteNavigation.Item href="#styles">Styles</SiteNavigation.Item>
-    <SiteNavigation.Item href="#components" current>Components</SiteNavigation.Item>
+    <SiteNavigation.Item href="#components" isCurrent>Components</SiteNavigation.Item>
     <SiteNavigation.Item href="#patterns">Patterns</SiteNavigation.Item>
     <SiteNavigation.Item href="#guidance">Guidance</SiteNavigation.Item>
 </SiteNavigation>;

@@ -3,7 +3,7 @@ import NotificationBanner from '@scottish-government/designsystem-react/dist/com
 
 import ExampleLayout from '../../../app/example-layout';
 
-export const Content = <NotificationBanner id="cookie-confirm" close className="ds_notification--cookie-success">
+export const Content = <NotificationBanner id="cookie-confirm" isDismissable className="ds_notification--cookie-success">
     <p>Your cookie preferences have been saved. You can <a href="/cookies/">change your cookie settings</a> at any time.</p>
 </NotificationBanner>;
 

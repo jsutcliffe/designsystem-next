@@ -27,10 +27,10 @@ export default function Page() {
             <Configuration componentName="Contents nav items">
                 <p><code>ContentsNav.Item</code> components nav items array can use the following propserties:</p>
                 <dl>
-                    <dt><code>current</code> (optional)</dt>
-                    <dd>Whether the nav item is for the current page. Boolean.</dd>
                     <dt><code>href</code> (optional)</dt>
                     <dd>URL of the contents nav item</dd>
+                    <dt><code>isCurrent</code> (optional)</dt>
+                    <dd>Whether the nav item is for the current page. Boolean.</dd>
                     <dt><code>linkComponent</code> (optional)</dt>
                     <dd>Function that returns an element, to customise the output.</dd>
                 </dl>

@@ -22,7 +22,7 @@ export const Content = <CheckboxGroup>
     <Checkbox
         id="none"
         label="No, I do not receive any of these benefits"
-        exclusive
+        isExclusive
     />
 </CheckboxGroup>;
 
