@@ -13,7 +13,7 @@ export default function Page() {
             <Configuration componentName="Breadcrumb item">
                 <p><code>Breadcrumbs.Item</code> components can use the following props:</p>
                 <dl>
-                    <dt><code>hidden</code> (optional)</dt>
+                    <dt><code>isHidden</code> (optional)</dt>
                     <dd>Applies a <code>visually-hidden</code> CSS class, for if you want to hide the last breadcrumb.</dd>
                     <dt><code>linkComponent</code> (optional)</dt>
                     <dd>Function that returns an element, to customise the output.</dd>

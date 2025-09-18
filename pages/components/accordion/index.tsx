@@ -33,6 +33,8 @@ export default function Page() {
                     <dd>ID to use for the accordion item if you want to override the automatically generated default for any reason.</dd>
                     <dt><code>isOpen</code> (optional)</dt>
                     <dd>Makes the accordion item display in an open state on page load.</dd>
+                    <dt><code>title</code></dt>
+                    <dd>Title of the accordion item.</dd>
                 </dl>
             </Configuration>
         </div>

@@ -40,7 +40,7 @@ export default function Page() {
                     <dt><code>tagColour</code> (optional)</dt>
                     <dd>The colour to use for the task&apos;s status tag. Default is <code>grey</code>.</dd>
                     <dt><code>title</code></dt>
-                    <dd>The title of the task list.</dd>
+                    <dd>The title of the task item.</dd>
                 </dl>
 
                 <p>Tasks can have additional content, provided as children of the task component.</p>
