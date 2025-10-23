@@ -36,6 +36,7 @@ const DSJSXSideNavigation = () => {
                 <NextJsSideNavigationItem href="/components/back-to-top" title="Back to top" />
                 <NextJsSideNavigationItem href="/components/breadcrumbs" title="Breadcrumbs" />
                 <NextJsSideNavigationItem href="/components/button" title="Button" />
+                <NextJsSideNavigationItem href="/components/button-group" title="Button group" />
                 <NextJsSideNavigationItem href="/components/checkbox" title="Checkbox" />
                 <NextJsSideNavigationItem href="/components/confirmation-message" title="Confirmation message" />
                 <NextJsSideNavigationItem href="/components/contents-nav" title="Contents nav" />
@@ -54,6 +55,10 @@ const DSJSXSideNavigation = () => {
                 <NextJsSideNavigationItem href="/components/phase-banner" title="Phase banner" />
                 <NextJsSideNavigationItem href="/components/question" title="Question" />
                 <NextJsSideNavigationItem href="/components/radio" title="Radio button" />
+                <NextJsSideNavigationItem href="/components/search-facets" title="Search facets" />
+                <NextJsSideNavigationItem href="/components/search-filters" title="Search filters" />
+                <NextJsSideNavigationItem href="/components/search-result" title="Search result" />
+                <NextJsSideNavigationItem href="/components/search-sort" title="Search sort" />
                 <NextJsSideNavigationItem href="/components/select" title="Select (dropdown)" />
                 <NextJsSideNavigationItem href="/components/sequential-navigation" title="Sequential navigation" />
                 <NextJsSideNavigationItem href="/components/side-navigation" title="Side navigation" />

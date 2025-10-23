@@ -27,7 +27,7 @@ export default function Page() {
                 <dl>
                     <dt><code>href</code> (optional)</dt>
                     <dd>The destination URL. The action will be a button element if this is omitted.</dd>
-                    <dt><code>onclick</code> (optional)</dt>
+                    <dt><code>onClick</code> (optional)</dt>
                     <dd>Function to fire in response to a click event.</dd>
                 </dl>
             </Configuration>

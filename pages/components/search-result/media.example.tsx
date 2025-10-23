@@ -1,0 +1,25 @@
+// @ts-expect-error no types from DS library
+import SearchResult from '@scottish-government/designsystem-react/dist/components/SearchResult/SearchResult';
+
+import ExampleLayout from '../../../app/example-layout';
+
+export const Content = <SearchResult
+  href="#foo"
+  title="Application incomplete"
+>
+  <SearchResult.Content>
+    <SearchResult.Media>
+      <img
+        alt=""
+        src="/highland-cow.jpg"
+      />
+    </SearchResult.Media>
+    Official statistics showing emissions of greenhouse gases in Scotland over the period 1990 to 2022.
+  </SearchResult.Content>
+</SearchResult>;
+
+export default function Page() {
+    return (<ExampleLayout>
+        {Content}
+    </ExampleLayout>);
+}

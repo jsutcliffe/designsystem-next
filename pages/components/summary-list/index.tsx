@@ -27,8 +27,6 @@ export default function Page() {
                     <dd>Array of summary item actions data.</dd>
                     <dt><code>title</code></dt>
                     <dd>Title of the summary list item.</dd>
-                    <dt><code>value</code> (optional)</dt>
-                    <dd>Value of the summary item. Can be either a string or an array.</dd>
                 </dl>
             </Configuration>
 
