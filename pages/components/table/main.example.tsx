@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import Table from '@scottish-government/designsystem-react/dist/components/Table/Table';
 
 import ExampleLayout from '../../../app/example-layout';

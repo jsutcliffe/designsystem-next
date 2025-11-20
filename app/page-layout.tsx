@@ -4,15 +4,10 @@ import Image from 'next/image';
 
 import RootLayout from './root-layout';
 
-// @ts-expect-error no types from DS library
 import BackToTop from '@scottish-government/designsystem-react/dist/components/BackToTop/BackToTop';
-// @ts-expect-error no types from DS library
 import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
-// @ts-expect-error no types from DS library
 import SkipLinks from '@scottish-government/designsystem-react/dist/components/SkipLinks/SkipLinks';
-// @ts-expect-error no types from DS library
 import SiteFooter from '@scottish-government/designsystem-react/dist/components/SiteFooter/SiteFooter';
-// @ts-expect-error no types from DS library
 import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
 
 import DSJSXSideNavigation from './components/DSJSXSideNavigation';

@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import NotificationPanel from '@scottish-government/designsystem-react/dist/components/NotificationPanel/NotificationPanel';
 
 import ExampleLayout from '../../../app/example-layout';

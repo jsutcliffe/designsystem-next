@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/Breadcrumbs/Breadcrumbs';
 
 import ExampleLayout from '../../../app/example-layout';

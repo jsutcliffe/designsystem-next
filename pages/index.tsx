@@ -1,5 +1,4 @@
 import Layout from '../app/page-layout';
-// @ts-expect-error no types from DS library
 import WarningText from '@scottish-government/designsystem-react/dist/components/WarningText/WarningText';
 import PageHeaderAndTitle from '../app/components/PageHeaderAndTitle';
 

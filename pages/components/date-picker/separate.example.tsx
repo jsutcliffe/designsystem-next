@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import DatePicker from '@scottish-government/designsystem-react/dist/components/DatePicker/DatePicker';
 
 import ExampleLayout from '../../../app/example-layout';

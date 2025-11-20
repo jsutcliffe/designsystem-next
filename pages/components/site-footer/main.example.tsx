@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import SiteFooter from '@scottish-government/designsystem-react/dist/components/SiteFooter/SiteFooter';
 
 import Image from 'next/image';

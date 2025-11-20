@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import SummaryList from '@scottish-government/designsystem-react/dist/components/SummaryList/SummaryList';
 
 import ExampleLayout from '../../../app/example-layout';

@@ -1,6 +1,4 @@
-// @ts-expect-error no types from DS library
 import Button from '@scottish-government/designsystem-react/dist/components/Button/Button';
-// @ts-expect-error no types from DS library
 import ButtonGroup from '@scottish-government/designsystem-react/dist/components/ButtonGroup/ButtonGroup';
 
 import ExampleLayout from '../../../app/example-layout';

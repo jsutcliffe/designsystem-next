@@ -1,6 +1,5 @@
 // 'use client';
 
-// @ts-expect-error no types from DS library
 import SideNavigation from '@scottish-government/designsystem-react/dist/components/SideNavigation/SideNavigation';
 import Link from 'next/link';
 // import { usePathname } from 'next/navigation';

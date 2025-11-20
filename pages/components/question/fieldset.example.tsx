@@ -1,8 +1,5 @@
-// @ts-expect-error no types from DS library
 import Question from '@scottish-government/designsystem-react/dist/components/Question/Question';
-// @ts-expect-error no types from DS library
 import Checkbox from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
-// @ts-expect-error no types from DS library
 import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/CheckboxGroup';
 
 import ExampleLayout from '../../../app/example-layout';

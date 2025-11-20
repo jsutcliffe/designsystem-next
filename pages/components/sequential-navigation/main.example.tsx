@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/SequentialNavigation/SequentialNavigation';
 
 import ExampleLayout from '../../../app/example-layout';

@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import PageHeader from '@scottish-government/designsystem-react/dist/components/PageHeader/PageHeader';
 import ExampleLayout from '../../../app/example-layout';
 

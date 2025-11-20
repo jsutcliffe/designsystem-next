@@ -2,9 +2,7 @@
 
 import React, {useEffect, useRef, useState} from 'react';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-// @ts-expect-error no types from DS library
 import Details from '@scottish-government/designsystem-react/dist/components/Details/Details';
-// @ts-expect-error no types from DS library
 import Prism from 'prismjs';
 
 type ExampleProps = {
@@ -56,39 +54,15 @@ const Example = function ({
 
     useEffect(() => {
         if (ref.current) {
-            // const iFrame = ref.current as HTMLIFrameElement;
-
-            // const iFrameDoc = iFrame.contentDocument;
-            // console.log(iFrameDoc)
-
-            // if (!height) {
-            //     waitForElement('.ds_accordion', iFrame.contentDocument).then((p) => {
-            //         console.log('p',p)
-            //         // resizeIFrameToFitContent(iFrame);
-            //     //     setCodeSample(iFrame.contentWindow.document.querySelector('div').innerHTML);
-            //     })
-            //     // iFrame.onload = () => {
-            //     //     resizeIFrameToFitContent(iFrame);
-            //     //     setCodeSample(iFrame.contentWindow.document.querySelector('div').innerHTML);
-            //     // }
-
-            //     window.addEventListener('resize', () => resizeIFrameToFitContent(iFrame))
-            // } else {
-            //     window.setTimeout(() => {
-            //         iFrame.contentWindow.document.querySelector('#example-inner').style.height = height + 'px';
-            //     }, 1000);
-            // }
-
             const iFrame = ref.current as HTMLIFrameElement;
             let intervalId: number;
 
             function resizeIFrameToFitContent(iFrame: HTMLIFrameElement) {
                 intervalId = window.setInterval(() => {
-                    // @ts-expect-error foo
-                    if (parseInt(iFrame?.contentWindow?.document?.body?.scrollHeight) > 8) { // eslint-disable-next-line no-use-before-define
-                        // @ts-expect-error foo
-                        iFrame.height = (iFrame?.contentWindow?.document?.body?.scrollHeight).toString(); // eslint-disable-next-line no-use-before-define
-                        // setCodeSample(iFrame.contentWindow.document.querySelector('#example-inner').innerHTML);
+                    const iFrameScrollHeight = iFrame?.contentWindow?.document?.body?.scrollHeight || 0;
+
+                    if (iFrameScrollHeight > 8) {
+                        iFrame.height = (iFrameScrollHeight).toString();
                         clearInterval(intervalId);
                     }
                 }, 10);

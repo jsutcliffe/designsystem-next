@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import Facets from '@scottish-government/designsystem-react/dist/components/SearchFacets/SearchFacets';
 
 import ExampleLayout from '../../../app/example-layout';

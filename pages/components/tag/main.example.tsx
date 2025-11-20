@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import Tag from '@scottish-government/designsystem-react/dist/components/Tag/Tag';
 
 import ExampleLayout from '../../../app/example-layout';

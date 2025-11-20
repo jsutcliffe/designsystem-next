@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import FileDownload from '@scottish-government/designsystem-react/dist/components/FileDownload/FileDownload'
 
 import ExampleLayout from '../../../app/example-layout';

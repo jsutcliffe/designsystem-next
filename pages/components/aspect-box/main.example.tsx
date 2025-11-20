@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import AspectBox from '@scottish-government/designsystem-react/dist/components/AspectBox/AspectBox';
 
 import ExampleLayout from '../../../app/example-layout';

@@ -1,12 +1,8 @@
 import Image from 'next/image';
 
-// @ts-expect-error no types from DS library
 import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
-// @ts-expect-error no types from DS library
 import SiteNavigation from '@scottish-government/designsystem-react/dist/components/SiteNavigation/SiteNavigation';
-// @ts-expect-error no types from DS library
 import SiteSearch from '@scottish-government/designsystem-react/dist/components/SiteSearch/SiteSearch';
-// @ts-expect-error no types from DS library
 import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
 
 import ExampleLayout from '../../../app/example-layout';

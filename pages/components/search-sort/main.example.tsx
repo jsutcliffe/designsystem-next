@@ -1,4 +1,3 @@
-// @ts-expect-error no types from DS library
 import SearchSort from '@scottish-government/designsystem-react/dist/components/SearchSort/SearchSort';
 
 import ExampleLayout from '../../../app/example-layout';
