@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@scottish-government/designsystem-react": "^0.12.1",
+    "@scottish-government/designsystem-react": "^0.13.0",
     "@types/node": "^20",
     "@types/prismjs": "^1.26.5",
     "@types/react": "^19",
