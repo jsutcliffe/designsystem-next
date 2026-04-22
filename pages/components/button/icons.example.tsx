@@ -1,4 +1,4 @@
-import Button from '@scottish-government/designsystem-react/dist/components/Button/Button';
+import Button from '@scottish-government/designsystem-react/src/components/Button/Button';
 
 import ExampleLayout from '../../../app/example-layout';
 
@@ -6,10 +6,10 @@ export const Content = <>
     <Button icon="ChevronRight">
         Button with icon
     </Button><br />
-    <Button iconLeft icon="ChevronLeft">
+    <Button isIconLeft icon="ChevronLeft">
         Button with left icon
     </Button><br />
-    <Button iconOnly icon="Search">
+    <Button isIconOnly icon="Search">
         Search
     </Button>
 </>;

@@ -1,4 +1,4 @@
-import WarningText from '@scottish-government/designsystem-react/dist/components/WarningText/WarningText';
+import WarningText from '@scottish-government/designsystem-react/src/components/WarningText/WarningText';
 
 import ExampleLayout from '../../../app/example-layout';
 

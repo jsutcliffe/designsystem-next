@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 import RootLayout from './root-layout';
 
-import BackToTop from '@scottish-government/designsystem-react/dist/components/BackToTop/BackToTop';
-import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
-import SkipLinks from '@scottish-government/designsystem-react/dist/components/SkipLinks/SkipLinks';
-import SiteFooter from '@scottish-government/designsystem-react/dist/components/SiteFooter/SiteFooter';
-import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
+import BackToTop from '@scottish-government/designsystem-react/src/components/BackToTop/BackToTop';
+import PhaseBanner from '@scottish-government/designsystem-react/src/components/PhaseBanner/PhaseBanner';
+import SkipLinks from '@scottish-government/designsystem-react/src/components/SkipLinks/SkipLinks';
+import SiteFooter from '@scottish-government/designsystem-react/src/components/SiteFooter/SiteFooter';
+import SiteHeader from '@scottish-government/designsystem-react/src/components/SiteHeader/SiteHeader';
 
 import DSJSXSideNavigation from './components/DSJSXSideNavigation';
 

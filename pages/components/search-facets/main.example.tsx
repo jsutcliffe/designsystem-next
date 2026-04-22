@@ -1,4 +1,4 @@
-import Facets from '@scottish-government/designsystem-react/dist/components/SearchFacets/SearchFacets';
+import Facets from '@scottish-government/designsystem-react/src/components/SearchFacets/SearchFacets';
 
 import ExampleLayout from '../../../app/example-layout';
 

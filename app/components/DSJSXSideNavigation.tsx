@@ -1,6 +1,6 @@
 // 'use client';
 
-import SideNavigation from '@scottish-government/designsystem-react/dist/components/SideNavigation/SideNavigation';
+import SideNavigation from '@scottish-government/designsystem-react/src/components/SideNavigation/SideNavigation';
 import Link from 'next/link';
 // import { usePathname } from 'next/navigation';
 
@@ -20,7 +20,7 @@ function NextJsSideNavigationItem({
     const isCurrent = href.indexOf(pathname) === 0;
 
     return (
-        <SideNavigation.Item current={isCurrent} href={href} title={title} linkComponent={({ className, ...props }: {className: string}) => (
+        <SideNavigation.Item isCurrent={isCurrent} href={href} title={title} linkComponent={({ className, ...props }) => (
             <Link className={className} href={href} {...props}/>
         )}>{children}</SideNavigation.Item>
     );
@@ -36,18 +36,21 @@ const DSJSXSideNavigation = () => {
                 <NextJsSideNavigationItem href="/components/breadcrumbs" title="Breadcrumbs" />
                 <NextJsSideNavigationItem href="/components/button" title="Button" />
                 <NextJsSideNavigationItem href="/components/button-group" title="Button group" />
+                <NextJsSideNavigationItem href="/components/card" title="Card" />
                 <NextJsSideNavigationItem href="/components/checkbox" title="Checkbox" />
                 <NextJsSideNavigationItem href="/components/confirmation-message" title="Confirmation message" />
                 <NextJsSideNavigationItem href="/components/contents-nav" title="Contents nav" />
-                <NextJsSideNavigationItem href="/components/cookie-banner" title="Cookie banner" />
+                {/* <NextJsSideNavigationItem href="/components/cookie-banner" title="Cookie banner" /> */}
                 <NextJsSideNavigationItem href="/components/date-picker" title="Date picker" />
                 <NextJsSideNavigationItem href="/components/details" title="Details" />
                 <NextJsSideNavigationItem href="/components/error-summary" title="Error summary" />
+                <NextJsSideNavigationItem href="/components/feature-header" title="Feature header" />
                 <NextJsSideNavigationItem href="/components/file-download" title="File download" />
                 <NextJsSideNavigationItem href="/components/hide-this-page" title="Hide this page" />
                 <NextJsSideNavigationItem href="/components/inset-text" title="Inset text" />
                 <NextJsSideNavigationItem href="/components/notification-banner" title="Notification banner" />
                 <NextJsSideNavigationItem href="/components/notification-panel" title="Notification panel" />
+                <NextJsSideNavigationItem href="/components/notification-tag" title="Notification tag" />
                 <NextJsSideNavigationItem href="/components/page-header" title="Page header" />
                 <NextJsSideNavigationItem href="/components/page-metadata" title="Page metadata" />
                 <NextJsSideNavigationItem href="/components/pagination" title="Pagination" />

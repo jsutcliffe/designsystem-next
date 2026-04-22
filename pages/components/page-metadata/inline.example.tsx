@@ -1,4 +1,4 @@
-import Metadata from '@scottish-government/designsystem-react/dist/components/PageMetadata/PageMetadata';
+import Metadata from '@scottish-government/designsystem-react/src/components/PageMetadata/PageMetadata';
 
 import ExampleLayout from '../../../app/example-layout';
 

@@ -1,4 +1,4 @@
-import TextInput from '@scottish-government/designsystem-react/dist/components/TextInput/TextInput';
+import TextInput from '@scottish-government/designsystem-react/src/components/TextInput/TextInput';
 
 import ExampleLayout from '../../../app/example-layout';
 

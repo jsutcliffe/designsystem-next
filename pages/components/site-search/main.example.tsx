@@ -1,7 +1,6 @@
-import SiteSearch from '@scottish-government/designsystem-react/dist/components/SiteSearch/SiteSearch';
+import SiteSearch from '@scottish-government/designsystem-react/src/components/SiteSearch/SiteSearch';
 
 import ExampleLayout from '../../../app/example-layout';
-
 
 type AutocompleteResponseObject = {
     key: string,
@@ -11,8 +10,10 @@ type AutocompleteResponseObject = {
     category: string
 }
 
-const suggestionMappingFunction = function (request: XMLHttpRequest) {
-    const responseObj = JSON.parse(request.response).map((item: string) => ({
+type SuggestionObject = { response: string };
+
+const suggestionMappingFunction = function (suggestionObj: SuggestionObject) {
+    const responseObj = JSON.parse(suggestionObj.response).map((item: string) => ({
         key: '',
         displayText: item,
         weight: '',
@@ -24,9 +25,9 @@ const suggestionMappingFunction = function (request: XMLHttpRequest) {
     return filteredResults.slice(0,6);
 }
 
-export const Content = <SiteSearch
+export const Content = <SiteSearch id="foo"
     autocompleteEndpoint="/autocomplete-dummy-data.json#"
-    autocompleteSuggestionMappingFunction={suggestionMappingFunction}
+    // autocompleteSuggestionMappingFunction={suggestionMappingFunction}
 />;
 
 export default function Page() {

@@ -1,5 +1,5 @@
-import RadioButton from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioButton';
-import RadioGroup from '@scottish-government/designsystem-react/dist/components/RadioButton/RadioGroup';
+import RadioButton from '@scottish-government/designsystem-react/src/components/RadioButton/RadioButton';
+import RadioGroup from '@scottish-government/designsystem-react/src/components/RadioButton/RadioGroup';
 
 import ExampleLayout from '../../../app/example-layout';
 

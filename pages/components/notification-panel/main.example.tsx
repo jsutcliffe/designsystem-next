@@ -1,4 +1,4 @@
-import NotificationPanel from '@scottish-government/designsystem-react/dist/components/NotificationPanel/NotificationPanel';
+import NotificationPanel from '@scottish-government/designsystem-react/src/components/NotificationPanel/NotificationPanel';
 
 import ExampleLayout from '../../../app/example-layout';
 

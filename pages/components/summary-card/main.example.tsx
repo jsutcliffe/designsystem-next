@@ -1,5 +1,5 @@
-import SummaryCard from '@scottish-government/designsystem-react/dist/components/SummaryCard/SummaryCard';
-import SummaryList from '@scottish-government/designsystem-react/dist/components/SummaryList/SummaryList';
+import SummaryCard from '@scottish-government/designsystem-react/src/components/SummaryCard/SummaryCard';
+import SummaryList from '@scottish-government/designsystem-react/src/components/SummaryList/SummaryList';
 
 import ExampleLayout from '../../../app/example-layout';
 

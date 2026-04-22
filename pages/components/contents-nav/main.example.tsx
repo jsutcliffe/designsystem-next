@@ -1,8 +1,8 @@
-import ContentsNav from '@scottish-government/designsystem-react/dist/components/ContentsNav/ContentsNav';
+import ContentsNav from '@scottish-government/designsystem-react/src/components/ContentsNav/ContentsNav';
 
 import ExampleLayout from '../../../app/example-layout';
 
-export const Content = <ContentsNav ariaLabel="Pages in this guide">
+export const Content = <ContentsNav title="Contents" ariaLabel="Pages in this guide">
     <ContentsNav.Item isCurrent>Apply for Blue Badge</ContentsNav.Item>
     <ContentsNav.Item href="#2">Eligibility</ContentsNav.Item>
     <ContentsNav.Item href="#3">Using your Blue Badge</ContentsNav.Item>

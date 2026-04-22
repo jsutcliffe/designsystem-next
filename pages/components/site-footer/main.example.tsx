@@ -1,4 +1,4 @@
-import SiteFooter from '@scottish-government/designsystem-react/dist/components/SiteFooter/SiteFooter';
+import SiteFooter from '@scottish-government/designsystem-react/src/components/SiteFooter/SiteFooter';
 
 import Image from 'next/image';
 import ExampleLayout from '../../../app/example-layout';

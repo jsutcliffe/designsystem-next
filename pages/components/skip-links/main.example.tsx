@@ -1,4 +1,4 @@
-import SkipLinks from '@scottish-government/designsystem-react/dist/components/SkipLinks/SkipLinks';
+import SkipLinks from '@scottish-government/designsystem-react/src/components/SkipLinks/SkipLinks';
 
 import ExampleLayout from '../../../app/example-layout';
 

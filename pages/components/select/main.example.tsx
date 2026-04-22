@@ -1,4 +1,4 @@
-import Select from '@scottish-government/designsystem-react/dist/components/Select/Select';
+import Select from '@scottish-government/designsystem-react/src/components/Select/Select';
 
 import ExampleLayout from '../../../app/example-layout';
 

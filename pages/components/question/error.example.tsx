@@ -1,13 +1,13 @@
-import Question from '@scottish-government/designsystem-react/dist/components/Question/Question';
-import TextInput from '@scottish-government/designsystem-react/dist/components/TextInput/TextInput';
+import Question from '@scottish-government/designsystem-react/src/components/Question/Question';
+import TextInput from '@scottish-government/designsystem-react/src/components/TextInput/TextInput';
 
 import ExampleLayout from '../../../app/example-layout';
 
-export const Content = <Question
+export const Content = <Question tagName="div"
     hasError
 >
     <TextInput
-        error="true"
+        hasError={true}
         errorMessage="This is a required field"
         id="text-input-question-error"
         label="First name"

@@ -1,11 +1,11 @@
-import Question from '@scottish-government/designsystem-react/dist/components/Question/Question';
-import Checkbox from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
-import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/CheckboxGroup';
+import Question from '@scottish-government/designsystem-react/src/components/Question/Question';
+import Checkbox from '@scottish-government/designsystem-react/src/components/Checkbox/Checkbox';
+import CheckboxGroup from '@scottish-government/designsystem-react/src/components/Checkbox/CheckboxGroup';
 
 import ExampleLayout from '../../../app/example-layout';
 
 export const Content = <Question
-    hasError="true"
+    hasError={true}
     errorMessage="You must select at least one option"
     hintText="Select all that apply."
     legend="Do you receive any of these benefits"
@@ -28,7 +28,7 @@ export const Content = <Question
         <Checkbox
             id="none"
             label="No, I do not receive any of these benefits"
-            exclusive
+            isExclusive
         />
     </CheckboxGroup>
 </Question>;

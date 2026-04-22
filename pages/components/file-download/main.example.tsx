@@ -1,4 +1,4 @@
-import FileDownload from '@scottish-government/designsystem-react/dist/components/FileDownload/FileDownload'
+import FileDownload from '@scottish-government/designsystem-react/src/components/FileDownload/FileDownload'
 
 import ExampleLayout from '../../../app/example-layout';
 

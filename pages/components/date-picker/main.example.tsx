@@ -1,4 +1,4 @@
-import DatePicker from '@scottish-government/designsystem-react/dist/components/DatePicker/DatePicker';
+import DatePicker from '@scottish-government/designsystem-react/src/components/DatePicker/DatePicker';
 
 import ExampleLayout from '../../../app/example-layout';
 

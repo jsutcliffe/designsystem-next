@@ -1,4 +1,4 @@
-import TaskList from '@scottish-government/designsystem-react/dist/components/TaskList/TaskList';
+import TaskList from '@scottish-government/designsystem-react/src/components/TaskList/TaskList';
 
 import ExampleLayout from '../../../app/example-layout';
 

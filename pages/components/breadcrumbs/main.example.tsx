@@ -1,4 +1,4 @@
-import Breadcrumbs from '@scottish-government/designsystem-react/dist/components/Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '@scottish-government/designsystem-react/src/components/Breadcrumbs/Breadcrumbs';
 
 import ExampleLayout from '../../../app/example-layout';
 

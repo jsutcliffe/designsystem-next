@@ -1,4 +1,4 @@
-import SideNavigation from '@scottish-government/designsystem-react/dist/components/SideNavigation/SideNavigation';
+import SideNavigation from '@scottish-government/designsystem-react/src/components/SideNavigation/SideNavigation';
 
 import ExampleLayout from '../../../app/example-layout';
 

@@ -1,4 +1,4 @@
-import BackToTop from '@scottish-government/designsystem-react/dist/components/BackToTop/BackToTop';
+import BackToTop from '@scottish-government/designsystem-react/src/components/BackToTop/BackToTop';
 
 import ExampleLayout from '../../../app/example-layout';
 

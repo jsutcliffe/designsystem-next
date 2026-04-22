@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import metadata from '../metadata';
-import Metadata from '@scottish-government/designsystem-react/dist/components/PageMetadata/PageMetadata';
-import PageHeader from '@scottish-government/designsystem-react/dist/components/PageHeader/PageHeader';
+import Metadata from '@scottish-government/designsystem-react/src/components/PageMetadata/PageMetadata';
+import PageHeader from '@scottish-government/designsystem-react/src/components/PageHeader/PageHeader';
 
 export type PageHeaderAndTitleProps = {
     children?: React.ReactNode,
@@ -12,7 +12,7 @@ export type PageHeaderAndTitleProps = {
 const PageHeaderAndTitle = ({
     children,
     prefix = 'SGDS React',
-    title
+    title = ''
 }: PageHeaderAndTitleProps) => {
     const titleText = prefix + (title && `: ${title}`)
     return (

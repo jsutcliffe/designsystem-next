@@ -1,4 +1,4 @@
-import PageHeader from '@scottish-government/designsystem-react/dist/components/PageHeader/PageHeader';
+import PageHeader from '@scottish-government/designsystem-react/src/components/PageHeader/PageHeader';
 import ExampleLayout from '../../../app/example-layout';
 
 export const Content = <PageHeader

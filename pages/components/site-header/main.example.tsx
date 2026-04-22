@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
-import SiteNavigation from '@scottish-government/designsystem-react/dist/components/SiteNavigation/SiteNavigation';
-import SiteSearch from '@scottish-government/designsystem-react/dist/components/SiteSearch/SiteSearch';
-import SiteHeader from '@scottish-government/designsystem-react/dist/components/SiteHeader/SiteHeader';
+import PhaseBanner from '@scottish-government/designsystem-react/src/components/PhaseBanner/PhaseBanner';
+import SiteNavigation from '@scottish-government/designsystem-react/src/components/SiteNavigation/SiteNavigation';
+import SiteSearch from '@scottish-government/designsystem-react/src/components/SiteSearch/SiteSearch';
+import SiteHeader from '@scottish-government/designsystem-react/src/components/SiteHeader/SiteHeader';
 
 import ExampleLayout from '../../../app/example-layout';
 
@@ -16,7 +16,7 @@ export const Content = <SiteHeader>
             <SiteNavigation.Item href="#about">About</SiteNavigation.Item>
             <SiteNavigation.Item href="#get-started">Get started</SiteNavigation.Item>
             <SiteNavigation.Item href="#styles">Styles</SiteNavigation.Item>
-            <SiteNavigation.Item href="#components" current>Components</SiteNavigation.Item>
+            <SiteNavigation.Item href="#components" isCurrent>Components</SiteNavigation.Item>
             <SiteNavigation.Item href="#patterns">Patterns</SiteNavigation.Item>
             <SiteNavigation.Item href="#guidance">Guidance</SiteNavigation.Item>
         </SiteNavigation>

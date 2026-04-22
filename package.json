@@ -16,15 +16,16 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@scottish-government/design-system": "^3.2.0",
-    "next": "^15.5.7",
+    "@scottish-government/design-system": "^4.0.0",
+    "clsx": "^2.1.1",
+    "next": "^16.2.4",
     "prismjs": "^1.30.0",
     "react": "^19.1.2",
     "react-dom": "^19.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@scottish-government/designsystem-react": "^0.13.0",
+    "@scottish-government/designsystem-react": "^1.0.1",
     "@types/node": "^20",
     "@types/prismjs": "^1.26.5",
     "@types/react": "^19",

@@ -1,4 +1,4 @@
-import SequentialNavigation from '@scottish-government/designsystem-react/dist/components/SequentialNavigation/SequentialNavigation';
+import SequentialNavigation from '@scottish-government/designsystem-react/src/components/SequentialNavigation/SequentialNavigation';
 
 import ExampleLayout from '../../../app/example-layout';
 

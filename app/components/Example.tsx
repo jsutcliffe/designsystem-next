@@ -2,7 +2,7 @@
 
 import React, {useEffect, useRef, useState} from 'react';
 import reactElementToJSXString from 'react-element-to-jsx-string';
-import Details from '@scottish-government/designsystem-react/dist/components/Details/Details';
+import Details from '@scottish-government/designsystem-react/src/components/Details/Details';
 import Prism from 'prismjs';
 
 type ExampleProps = {

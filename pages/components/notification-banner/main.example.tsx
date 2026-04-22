@@ -1,4 +1,4 @@
-import NotificationBanner from '@scottish-government/designsystem-react/dist/components/NotificationBanner/NotificationBanner';
+import NotificationBanner from '@scottish-government/designsystem-react/src/components/NotificationBanner/NotificationBanner';
 
 import ExampleLayout from '../../../app/example-layout';
 

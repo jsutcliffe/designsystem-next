@@ -1,6 +1,6 @@
-import Filters from '@scottish-government/designsystem-react/dist/components/SearchFilters/SearchFilters';
-import Checkbox from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
-import DatePicker from '@scottish-government/designsystem-react/dist/components/DatePicker/DatePicker';
+import Filters from '@scottish-government/designsystem-react/src/components/SearchFilters/SearchFilters';
+import Checkbox from '@scottish-government/designsystem-react/src/components/Checkbox/Checkbox';
+import DatePicker from '@scottish-government/designsystem-react/src/components/DatePicker/DatePicker';
 
 import ExampleLayout from '../../../app/example-layout';
 

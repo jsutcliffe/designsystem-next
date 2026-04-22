@@ -1,4 +1,4 @@
-import Table from '@scottish-government/designsystem-react/dist/components/Table/Table';
+import Table from '@scottish-government/designsystem-react/src/components/Table/Table';
 
 import ExampleLayout from '../../../app/example-layout';
 

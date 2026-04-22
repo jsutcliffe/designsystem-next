@@ -1,4 +1,4 @@
-import SiteNavigation from '@scottish-government/designsystem-react/dist/components/SiteNavigation/SiteNavigation';
+import SiteNavigation from '@scottish-government/designsystem-react/src/components/SiteNavigation/SiteNavigation';
 
 import ExampleLayout from '../../../app/example-layout';
 

@@ -1,4 +1,4 @@
-import Button from '@scottish-government/designsystem-react/dist/components/Button/Button';
+import Button from '@scottish-government/designsystem-react/src/components/Button/Button';
 
 import ExampleLayout from '../../../app/example-layout';
 

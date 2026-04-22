@@ -1,5 +1,5 @@
 import Layout from '../app/page-layout';
-import WarningText from '@scottish-government/designsystem-react/dist/components/WarningText/WarningText';
+import WarningText from '@scottish-government/designsystem-react/src/components/WarningText/WarningText';
 import PageHeaderAndTitle from '../app/components/PageHeaderAndTitle';
 
 export default function Home() {
@@ -9,11 +9,6 @@ export default function Home() {
 
       <div className="ds_layout__content">
         <p>This is the Scottish Government Design System as a React UI component library.</p>
-
-        <WarningText>
-          This project is in an alpha state and could potentially receive large breaking changes
-          with little warning while it is being developed.
-        </WarningText>
 
         <h2>Feedback, help or support</h2>
         <p>If you need any help or want to give any feedback you can e-mail the Design System team

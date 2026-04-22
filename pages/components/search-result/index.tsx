@@ -39,8 +39,8 @@ export default function Page() {
                 </dl>
             </Configuration>
 
-            <Configuration componentName="Search result meta">
-                <p><code>SearchResult.Meta</code> components behave the same way as <Link href="./page-metadata">PageMetadata</Link> components, with <code>isInline</code> active.</p>
+            <Configuration componentName="Search result metadata">
+                <p><code>SearchResult.Metadata</code> components behave the same way as <Link href="./page-metadata">PageMetadata</Link> components, with <code>isInline</code> active.</p>
             </Configuration>
 
             <Configuration componentName="Search result media">

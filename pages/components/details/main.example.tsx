@@ -1,4 +1,4 @@
-import Details from '@scottish-government/designsystem-react/dist/components/Details/Details';
+import Details from '@scottish-government/designsystem-react/src/components/Details/Details';
 
 import ExampleLayout from '../../../app/example-layout';
 

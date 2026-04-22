@@ -1,4 +1,4 @@
-import SearchSort from '@scottish-government/designsystem-react/dist/components/SearchSort/SearchSort';
+import SearchSort from '@scottish-government/designsystem-react/src/components/SearchSort/SearchSort';
 
 import ExampleLayout from '../../../app/example-layout';
 

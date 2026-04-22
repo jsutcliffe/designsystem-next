@@ -1,5 +1,5 @@
-import Checkbox from '@scottish-government/designsystem-react/dist/components/Checkbox/Checkbox';
-import CheckboxGroup from '@scottish-government/designsystem-react/dist/components/Checkbox/CheckboxGroup';
+import Checkbox from '@scottish-government/designsystem-react/src/components/Checkbox/Checkbox';
+import CheckboxGroup from '@scottish-government/designsystem-react/src/components/Checkbox/CheckboxGroup';
 
 import ExampleLayout from '../../../app/example-layout';
 
@@ -7,7 +7,7 @@ export const Content = <CheckboxGroup>
     <Checkbox
         id="universal-credit"
         label="Universal Credit"
-        checked
+        // checked
     />
     <Checkbox
         id="pension-credit"

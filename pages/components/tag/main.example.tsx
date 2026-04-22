@@ -1,4 +1,4 @@
-import Tag from '@scottish-government/designsystem-react/dist/components/Tag/Tag';
+import Tag from '@scottish-government/designsystem-react/src/components/Tag/Tag';
 
 import ExampleLayout from '../../../app/example-layout';
 

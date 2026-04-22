@@ -5,7 +5,7 @@ import "@scottish-government/design-system/dist/css/design-system.css";
 import "./app.css";
 import "./highlight.css";
 
-import useTracking from '@scottish-government/designsystem-react/src/hooks/useTracking';
+import useTracking from '@scottish-government/designsystem-react/dist/hooks/useTracking';
 
 export const metadata = {
     title: "SG Design System React",

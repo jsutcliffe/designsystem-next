@@ -1,4 +1,4 @@
-import PhaseBanner from '@scottish-government/designsystem-react/dist/components/PhaseBanner/PhaseBanner';
+import PhaseBanner from '@scottish-government/designsystem-react/src/components/PhaseBanner/PhaseBanner';
 
 import ExampleLayout from '../../../app/example-layout';
 

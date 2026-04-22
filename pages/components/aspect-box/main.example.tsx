@@ -1,4 +1,4 @@
-import AspectBox from '@scottish-government/designsystem-react/dist/components/AspectBox/AspectBox';
+import AspectBox from '@scottish-government/designsystem-react/src/components/AspectBox/AspectBox';
 
 import ExampleLayout from '../../../app/example-layout';
 

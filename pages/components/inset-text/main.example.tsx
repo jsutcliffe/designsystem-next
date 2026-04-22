@@ -1,4 +1,4 @@
-import InsetText from '@scottish-government/designsystem-react/dist/components/InsetText/InsetText';
+import InsetText from '@scottish-government/designsystem-react/src/components/InsetText/InsetText';
 
 import ExampleLayout from '../../../app/example-layout';
 

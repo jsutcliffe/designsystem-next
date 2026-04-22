@@ -1,4 +1,4 @@
-import SummaryList from '@scottish-government/designsystem-react/dist/components/SummaryList/SummaryList';
+import SummaryList from '@scottish-government/designsystem-react/src/components/SummaryList/SummaryList';
 
 import ExampleLayout from '../../../app/example-layout';
 
