@@ -5,13 +5,13 @@ import PageHeaderAndTitle from '../../../app/components/PageHeaderAndTitle';
 
 export default function Page() {
     return (<Layout>
-        <PageHeaderAndTitle title="Confirmation message"/>
+        <PageHeaderAndTitle title="Info notification"/>
 
         <div className="ds_layout__content">
-            <Example path="./confirmation-message/main.example"/>
+            <Example path="./info-notification/main.example"/>
 
-            <Configuration componentName="Confirmation message">
-                <p><code>ConfirmationMessage</code> components can use the following prop:</p>
+            <Configuration componentName="Info notification">
+                <p><code>InfoNotification</code> components can use the following props:</p>
                 <dl>
                     <dt><code>ariaLive</code> (optional)</dt>
                     <dd>Value for an <code>aria-live</code> attribute on the confirmation message, for cases where it&apos;s added to the page dynamically. Default is <code>polite</code>.</dd>

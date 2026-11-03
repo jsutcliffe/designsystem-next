@@ -24,7 +24,7 @@ const PageHeaderAndTitle = ({
                 <PageHeader title={title} titleId="main-content">
                     <Metadata>
                         <Metadata.Item name="Last updated">{metadata.lastUpdated}</Metadata.Item>
-                        <Metadata.Item name="Package version"><a href={metadata.package.url}>{metadata.package.version}</a></Metadata.Item>
+                        <Metadata.Item name="Design System React version"><a href={metadata.package.url}>{metadata.package.version}</a></Metadata.Item>
                     </Metadata>
                     {children}
                 </PageHeader>

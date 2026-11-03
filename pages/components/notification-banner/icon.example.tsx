@@ -2,7 +2,7 @@ import NotificationBanner from '@scottish-government/designsystem-react/src/comp
 
 import ExampleLayout from '../../../app/example-layout';
 
-export const Content = <NotificationBanner icon="PriorityHigh" hasColourIcon hasInverseIcon isDismissable>
+export const Content = <NotificationBanner icon="Warning" isDismissable>
     <p>We need to tell you about <a href="#notification">something</a></p>
 </NotificationBanner>;
 

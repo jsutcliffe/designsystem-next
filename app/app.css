@@ -10,11 +10,36 @@ pre > code {
 
 code:not([class*=language-]) {
     color: #d32205;
-    font-family: monospace;
+    font-family: 'Fira Code', monospace;
 }
 
 
+.ds_layout--full {
+    grid-template-areas:
+        'h h'
+        's s'
+        'c c'
+        'f f';
+}
 
+@media (min-width:480px) {
+        .ds_layout--full {
+            grid-template-areas:
+                'h h h h h h'
+                's s s s s s'
+                'c c c c c c'
+                'f f f f f f';
+        }
+    }
+
+@media (min-width: 768px){
+    .ds_layout--full {
+        grid-template-areas:
+            'h h h h h h h h h h h h'
+            'c c c c c c c c c c c c'
+            'f f f f f f f f f f f f';
+    }
+}
 
 .ds_layout--pl-component {
     grid-template-areas:

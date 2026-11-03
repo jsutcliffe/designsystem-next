@@ -2,7 +2,7 @@
 
 import SideNavigation from '@scottish-government/designsystem-react/src/components/SideNavigation/SideNavigation';
 import Link from 'next/link';
-// import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 type DSJSXSideNavigationProps = {
     children?: React.ReactNode,
@@ -16,8 +16,8 @@ function NextJsSideNavigationItem({
     children,
     title,
 }: DSJSXSideNavigationProps) {
-    const pathname = 'foo'; //usePathname();
-    const isCurrent = href.indexOf(pathname) === 0;
+    const pathname = usePathname();
+    const isCurrent = pathname !== '/' && href.indexOf(pathname as string) === 0;
 
     return (
         <SideNavigation.Item isCurrent={isCurrent} href={href} title={title} linkComponent={({ className, ...props }) => (
@@ -38,15 +38,18 @@ const DSJSXSideNavigation = () => {
                 <NextJsSideNavigationItem href="/components/button-group" title="Button group" />
                 <NextJsSideNavigationItem href="/components/card" title="Card" />
                 <NextJsSideNavigationItem href="/components/checkbox" title="Checkbox" />
-                <NextJsSideNavigationItem href="/components/confirmation-message" title="Confirmation message" />
+                <NextJsSideNavigationItem href="/components/confirmation-notification" title="Confirmation notification" />
                 <NextJsSideNavigationItem href="/components/contents-nav" title="Contents nav" />
                 {/* <NextJsSideNavigationItem href="/components/cookie-banner" title="Cookie banner" /> */}
                 <NextJsSideNavigationItem href="/components/date-picker" title="Date picker" />
                 <NextJsSideNavigationItem href="/components/details" title="Details" />
+                <NextJsSideNavigationItem href="/components/error-notification" title="Error notification" />
                 <NextJsSideNavigationItem href="/components/error-summary" title="Error summary" />
                 <NextJsSideNavigationItem href="/components/feature-header" title="Feature header" />
                 <NextJsSideNavigationItem href="/components/file-download" title="File download" />
+                <NextJsSideNavigationItem href="/components/file-upload" title="File upload" />
                 <NextJsSideNavigationItem href="/components/hide-this-page" title="Hide this page" />
+                <NextJsSideNavigationItem href="/components/info-notification" title="Info notification" />
                 <NextJsSideNavigationItem href="/components/inset-text" title="Inset text" />
                 <NextJsSideNavigationItem href="/components/notification-banner" title="Notification banner" />
                 <NextJsSideNavigationItem href="/components/notification-panel" title="Notification panel" />
@@ -77,6 +80,7 @@ const DSJSXSideNavigation = () => {
                 <NextJsSideNavigationItem href="/components/task-list" title="Task list" />
                 <NextJsSideNavigationItem href="/components/text-input" title="Text input" />
                 <NextJsSideNavigationItem href="/components/textarea" title="Textarea" />
+                <NextJsSideNavigationItem href="/components/warning-notification" title="Warning notification" />
                 <NextJsSideNavigationItem href="/components/warning-text" title="Warning text" />
             </SideNavigation.List>
         </SideNavigation>

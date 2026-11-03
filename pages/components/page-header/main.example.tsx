@@ -3,7 +3,7 @@ import ExampleLayout from '../../../app/example-layout';
 
 export const Content = <PageHeader
     label="Guide"
-    title="Apply for or renew a disabled parking permit"
+    heading=<>Apply for or renew<br /> a disabled parking permit</>
 />;
 
 export default function Page() {
